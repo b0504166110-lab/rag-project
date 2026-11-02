@@ -1,0 +1,7 @@
+[
+  {"id": 301, "category": "ניסוח לקוחה", "question": "שלום, הזמנתי משחקים ב-250 שקלים. האם אני צריכה לשלם גם על המשלוח?", "doc_type": "מדיניות", "expected_files": ["shipping_policy_v2.md"], "expected_answer": "לא, משלוח חינם להזמנות מ-199 ₪ ומעלה.", "answerable": true},
+  {"id": 302, "category": "ניסוח לקוחה", "question": "אני רוצה להזמין משחק ב-400 שקלים. אפשר לפרוס את התשלום?", "doc_type": "שאלות נפוצות ושירות לקוחות", "expected_files": ["faq_orders.md"], "expected_answer": "כן, אפשר עד 6 תשלומים ללא ריבית בהזמנה מ-300 ₪.", "answerable": true},
+  {"id": 303, "category": "ניסוח לקוחה", "question": "בא לי לדבר עם נציג בן אדם ולא למלא טופס. איך אפשר ליצור קשר?", "doc_type": "שאלות נפוצות ושירות לקוחות", "expected_files": ["faq_service_hours.md"], "expected_answer": "בטלפון 03-555-0142, בימים א' עד ה' בין 09:00 ל-17:00 וביום ו' בין 09:00 ל-12:00.", "answerable": true},
+  {"id": 304, "category": "ניסוח לקוחה", "question": "אני מחפשת מתנה לילד שלי בן 7. איזה משחק מתאים ובכמה זה עולה?", "doc_type": "קטלוג מוצרים", "expected_files": ["catalog_2025.md", "rules_masa_hatzvaim.md"], "expected_answer": "מסע הצבעים, מגיל 6, במחיר 129 ₪.", "answerable": true},
+  {"id": 305, "category": "ניסוח לקוחה, אין תשובה במאגר", "question": "אפשר לשחק במגדלי הברק גם באפליקציה בטלפון?", "doc_type": "חוקי משחק", "expected_files": [], "expected_answer": "אין מידע במאגר. המערכת צריכה לסרב לענות.", "answerable": false}
+]

@@ -1,0 +1,479 @@
+[
+ {
+  "id": 1,
+  "category": "ישירה",
+  "question": "כמה קומות צריך לבנות כדי לנצח במגדלי הברק במהדורה השנייה?",
+  "doc_type": "חוקי משחק",
+  "expected_files": [
+   "rules_migdalei_barak.md",
+   "release_migdalei_barak_2nd.md"
+  ],
+  "expected_answer": "8 קומות (במהדורה הראשונה היעד היה 7 קומות).",
+  "answerable": true
+ },
+ {
+  "id": 2,
+  "category": "ישירה",
+  "question": "תוך כמה ימים מקבלים החזר כספי אחרי שהמוצר מגיע למחסן?",
+  "doc_type": "מדיניות",
+  "expected_files": [
+   "returns_policy_v2.md"
+  ],
+  "expected_answer": "תוך 7 ימי עסקים מקבלת המוצר במחסן, לאמצעי התשלום המקורי.",
+  "answerable": true
+ },
+ {
+  "id": 3,
+  "category": "ניסוח שונה מהמסמך",
+  "question": "קניתי משחק, פתחתי אותו ועכשיו התחרטתי. אפשר להחזיר?",
+  "doc_type": "מדיניות",
+  "expected_files": [
+   "returns_policy_v2.md"
+  ],
+  "expected_answer": "כן. אפשר להחזיר בתוך 30 ימים מקבלת המוצר, אם המשחק שלם וכולל את כל החלקים והחוברת, ולא שיחקו בו יותר מפעמיים.",
+  "answerable": true
+ },
+ {
+  "id": 4,
+  "category": "ניסוח שונה מהמסמך",
+  "question": "עד מתי אפשר לפנות לשירות הלקוחות בימי שישי?",
+  "doc_type": "שאלות נפוצות ושירות לקוחות",
+  "expected_files": [
+   "faq_service_hours.md"
+  ],
+  "expected_answer": "בימי שישי שירות הלקוחות פעיל מ-09:00 עד 12:00, כלומר עד השעה 12:00.",
+  "answerable": true
+ },
+ {
+  "id": 5,
+  "category": "פרט מדויק",
+  "question": "מה המק\"ט של קובייה חלופית למסע הצבעים וכמה היא עולה?",
+  "doc_type": "קטלוג מוצרים",
+  "expected_files": [
+   "catalog_accessories.pdf"
+  ],
+  "expected_answer": "המק\"ט הוא AC-404 והמחיר 9 ₪.",
+  "answerable": true
+ },
+ {
+  "id": 6,
+  "category": "פרט מדויק",
+  "question": "כמה עולה ים של אבנים לפי הקטלוג הנוכחי?",
+  "doc_type": "קטלוג מוצרים",
+  "expected_files": [
+   "catalog_2025.md"
+  ],
+  "expected_answer": "149 ₪ בקטלוג הנוכחי (בקטלוג הקודם היה 139 ₪).",
+  "answerable": true
+ },
+ {
+  "id": 7,
+  "category": "כמה מסמכים",
+  "question": "איך השתנו תנאי המשלוח החינם וזמן האספקה בין המדיניות הישנה לחדשה?",
+  "doc_type": "מדיניות",
+  "expected_files": [
+   "shipping_policy_v1.md",
+   "shipping_policy_v2.md"
+  ],
+  "expected_answer": "במדיניות הישנה משלוח חינם מ-250 ₪ וזמן אספקה של 5 עד 7 ימי עסקים. במדיניות החדשה משלוח חינם מ-199 ₪ וזמן אספקה של 3 עד 5 ימי עסקים.",
+  "answerable": true
+ },
+ {
+  "id": 8,
+  "category": "פרט מדויק",
+  "question": "כמה נקודות שווה צנצנת דבש עם חותמת מלכה בעמק הדבורים?",
+  "doc_type": "חוקי משחק",
+  "expected_files": [
+   "rules_emek_hadvorim.pdf"
+  ],
+  "expected_answer": "5 נקודות (צנצנת דבש רגילה שווה 3 נקודות).",
+  "answerable": true
+ },
+ {
+  "id": 9,
+  "category": "אין תשובה במאגר",
+  "question": "מהו מספר הפקס של שירות הלקוחות?",
+  "doc_type": "שאלות נפוצות ושירות לקוחות",
+  "expected_files": [],
+  "expected_answer": "אין מידע במאגר. המערכת צריכה לסרב לענות.",
+  "answerable": false
+ },
+ {
+  "id": 10,
+  "category": "אין תשובה במאגר",
+  "question": "כמה עותקים נמכרו ממגדלי הברק בשנה הראשונה?",
+  "doc_type": "היסטוריית החברה והודעות",
+  "expected_files": [],
+  "expected_answer": "אין מידע במאגר. המערכת צריכה לסרב לענות.",
+  "answerable": false
+ },
+ {
+  "id": 101,
+  "category": "ישירה",
+  "question": "כמה שחקנים יכולים לשחק בחוטפי המפות?",
+  "doc_type": "חוקי משחק",
+  "expected_files": [
+   "rules_chotfei_hamapot.md"
+  ],
+  "expected_answer": "3 עד 5 שחקנים.",
+  "answerable": true
+ },
+ {
+  "id": 102,
+  "category": "ישירה",
+  "question": "כמה קלפים מקבל כל שחקן בתחילת חוטפי המפות?",
+  "doc_type": "חוקי משחק",
+  "expected_files": [
+   "rules_chotfei_hamapot.md"
+  ],
+  "expected_answer": "5 קלפים.",
+  "answerable": true
+ },
+ {
+  "id": 103,
+  "category": "ישירה",
+  "question": "כמה משבצות יש בלוח של מסע הצבעים?",
+  "doc_type": "חוקי משחק",
+  "expected_files": [
+   "rules_masa_hatzvaim.md"
+  ],
+  "expected_answer": "40 משבצות.",
+  "answerable": true
+ },
+ {
+  "id": 104,
+  "category": "פרט מדויק",
+  "question": "כמה סבבים נמשך משחק של עמק הדבורים?",
+  "doc_type": "חוקי משחק",
+  "expected_files": [
+   "rules_emek_hadvorim.pdf"
+  ],
+  "expected_answer": "8 סבבים, ארבע עונות בשני סבבים כל אחת.",
+  "answerable": true
+ },
+ {
+  "id": 105,
+  "category": "פרט מדויק",
+  "question": "כמה נקודות צריך כדי לנצח במשחק סולו בעמק הדבורים?",
+  "doc_type": "חוקי משחק",
+  "expected_files": [
+   "rules_emek_hadvorim.pdf"
+  ],
+  "expected_answer": "לפחות 45 נקודות.",
+  "answerable": true
+ },
+ {
+  "id": 106,
+  "category": "פרט מדויק",
+  "question": "כמה כוכבים יש לקבוצה שפותחת בקוד הכוכבים?",
+  "doc_type": "חוקי משחק",
+  "expected_files": [
+   "rules_kod_hakochavim.pdf"
+  ],
+  "expected_answer": "9 כוכבים (לקבוצה השנייה יש 8).",
+  "answerable": true
+ },
+ {
+  "id": 107,
+  "category": "ניסוח שונה מהמסמך",
+  "question": "מה קורה לשחקן אם המגדל שלו נופל תוך כדי בנייה במגדלי הברק?",
+  "doc_type": "חוקי משחק",
+  "expected_files": [
+   "rules_migdalei_barak.md"
+  ],
+  "expected_answer": "השחקן מאבד את הקומה העליונה של המגדל ומחזיר את הקוביות שלה לקופתו.",
+  "answerable": true
+ },
+ {
+  "id": 108,
+  "category": "גרסה ישנה",
+  "question": "כמה ימים היו להחזיר מוצר לפי מדיניות ההחזרות הישנה?",
+  "doc_type": "מדיניות",
+  "expected_files": [
+   "returns_policy_v1.md"
+  ],
+  "expected_answer": "14 ימים מיום קבלת המוצר.",
+  "answerable": true
+ },
+ {
+  "id": 109,
+  "category": "פרט מדויק",
+  "question": "כמה עולה משלוח אקספרס ועד איזו שעה צריך להזמין כדי שיגיע למחרת?",
+  "doc_type": "מדיניות",
+  "expected_files": [
+   "shipping_policy_v2.md"
+  ],
+  "expected_answer": "49 ₪, בהזמנה עד השעה 14:00 (מגיע ביום העסקים הבא).",
+  "answerable": true
+ },
+ {
+  "id": 110,
+  "category": "גרסה ישנה",
+  "question": "מה תקופת האחריות על מוצר שנקנה לפני יוני 2025?",
+  "doc_type": "מדיניות",
+  "expected_files": [
+   "warranty_policy.pdf"
+  ],
+  "expected_answer": "12 חודשים (24 חודשים למוצרים שנקנו מ-1 ביוני 2025).",
+  "answerable": true
+ },
+ {
+  "id": 111,
+  "category": "ניסוח שונה מהמסמך",
+  "question": "שיחקנו הרבה פעמים במשחק ועכשיו אנחנו רוצים להחזיר אותו, אפשר?",
+  "doc_type": "מדיניות",
+  "expected_files": [
+   "returns_policy_v2.md"
+  ],
+  "expected_answer": "לא. משחק ששיחקו בו יותר מפעמיים לא יתקבל להחזרה, אלא אם נמצא בו פגם.",
+  "answerable": true
+ },
+ {
+  "id": 112,
+  "category": "פרט מדויק",
+  "question": "כמה עולה ערכת האסטרטגיה וכמה חוסכים בה לעומת קניית המשחקים בנפרד?",
+  "doc_type": "קטלוג מוצרים",
+  "expected_files": [
+   "catalog_gift_sets.md"
+  ],
+  "expected_answer": "429 ₪, חיסכון של 49 ₪.",
+  "answerable": true
+ },
+ {
+  "id": 113,
+  "category": "כמה מסמכים",
+  "question": "כמה עולה התוספת סערת חורף ולאיזה משחק ומהדורה היא מתאימה?",
+  "doc_type": "קטלוג מוצרים",
+  "expected_files": [
+   "catalog_expansions.md"
+  ],
+  "expected_answer": "69 ₪, והיא מתאימה למהדורה השנייה של מגדלי הברק בלבד.",
+  "answerable": true
+ },
+ {
+  "id": 114,
+  "category": "גרסה ישנה",
+  "question": "כמה עלה מגדלי הברק בקטלוג של 2024?",
+  "doc_type": "קטלוג מוצרים",
+  "expected_files": [
+   "catalog_2024.md"
+  ],
+  "expected_answer": "189 ₪.",
+  "answerable": true
+ },
+ {
+  "id": 115,
+  "category": "ניסוח שונה מהמסמך",
+  "question": "כמה נקודות צריך לצבור במועדון כדי לקבל עשרה שקלים הנחה?",
+  "doc_type": "שאלות נפוצות ושירות לקוחות",
+  "expected_files": [
+   "faq_club.md"
+  ],
+  "expected_answer": "100 נקודות שוות 10 ₪ הנחה (נקודה אחת על כל 10 ₪ שנקנו).",
+  "answerable": true
+ },
+ {
+  "id": 116,
+  "category": "ישירה",
+  "question": "מה מספר הטלפון של שירות הלקוחות?",
+  "doc_type": "שאלות נפוצות ושירות לקוחות",
+  "expected_files": [
+   "faq_service_hours.md"
+  ],
+  "expected_answer": "03-555-0142.",
+  "answerable": true
+ },
+ {
+  "id": 117,
+  "category": "כמה מסמכים",
+  "question": "חסר לי חלק בקופסה. מה עושים ותוך כמה זמן הוא יגיע?",
+  "doc_type": "שאלות נפוצות ושירות לקוחות",
+  "expected_files": [
+   "faq_missing_parts.pdf",
+   "warranty_policy.pdf"
+  ],
+  "expected_answer": "ממלאים טופס חלקים חסרים באתר עם תמונה, והחלק נשלח בחינם בתוך 5 ימי עסקים.",
+  "answerable": true
+ },
+ {
+  "id": 118,
+  "category": "ישירה",
+  "question": "מי הקים את החברה ומתי?",
+  "doc_type": "היסטוריית החברה והודעות",
+  "expected_files": [
+   "history_company.md"
+  ],
+  "expected_answer": "דנה אלוני ורון שחר, בשנת 2011 בחיפה.",
+  "answerable": true
+ },
+ {
+  "id": 119,
+  "category": "אין תשובה במאגר",
+  "question": "כמה עולה המשחק החיפושית הקסומה?",
+  "doc_type": "קטלוג מוצרים",
+  "expected_files": [],
+  "expected_answer": "אין משחק כזה במאגר. המערכת צריכה לסרב לענות.",
+  "answerable": false
+ },
+ {
+  "id": 120,
+  "category": "אין תשובה במאגר",
+  "question": "מה כתובת המשרדים של החברה?",
+  "doc_type": "היסטוריית החברה והודעות",
+  "expected_files": [],
+  "expected_answer": "אין מידע במאגר. המערכת צריכה לסרב לענות.",
+  "answerable": false
+ },
+ {
+  "id": 401,
+  "category": "החטאת אחזור (בעיה 11)",
+  "question": "אם חסר לי חלק במשחק, מה עושים?",
+  "doc_type": "שאלות נפוצות ושירות לקוחות",
+  "expected_files": [
+   "faq_missing_parts.pdf",
+   "warranty_policy.pdf"
+  ],
+  "expected_answer": "ממלאים טופס חלקים חסרים באתר עם תמונה, והחלק נשלח בחינם בתוך 5 ימי עסקים.",
+  "answerable": true
+ },
+ {
+  "id": 301,
+  "category": "ניסוח לקוחה",
+  "question": "שלום, הזמנתי משחקים ב-250 שקלים. האם אני צריכה לשלם גם על המשלוח?",
+  "doc_type": "מדיניות",
+  "expected_files": [
+   "shipping_policy_v2.md"
+  ],
+  "expected_answer": "לא, משלוח חינם להזמנות מ-199 ₪ ומעלה.",
+  "answerable": true
+ },
+ {
+  "id": 302,
+  "category": "ניסוח לקוחה",
+  "question": "אני רוצה להזמין משחק ב-400 שקלים. אפשר לפרוס את התשלום?",
+  "doc_type": "שאלות נפוצות ושירות לקוחות",
+  "expected_files": [
+   "faq_orders.md"
+  ],
+  "expected_answer": "כן, אפשר עד 6 תשלומים ללא ריבית בהזמנה מ-300 ₪.",
+  "answerable": true
+ },
+ {
+  "id": 303,
+  "category": "ניסוח לקוחה",
+  "question": "בא לי לדבר עם נציג בן אדם ולא למלא טופס. איך אפשר ליצור קשר?",
+  "doc_type": "שאלות נפוצות ושירות לקוחות",
+  "expected_files": [
+   "faq_service_hours.md"
+  ],
+  "expected_answer": "בטלפון 03-555-0142, בימים א' עד ה' בין 09:00 ל-17:00 וביום ו' בין 09:00 ל-12:00.",
+  "answerable": true
+ },
+ {
+  "id": 304,
+  "category": "ניסוח לקוחה",
+  "question": "אני מחפשת מתנה לילד שלי בן 7. איזה משחק מתאים ובכמה זה עולה?",
+  "doc_type": "קטלוג מוצרים",
+  "expected_files": [
+   "catalog_2025.md",
+   "rules_masa_hatzvaim.md"
+  ],
+  "expected_answer": "מסע הצבעים, מגיל 6, במחיר 129 ₪.",
+  "answerable": true
+ },
+ {
+  "id": 305,
+  "category": "ניסוח לקוחה, אין תשובה במאגר",
+  "question": "אפשר לשחק במגדלי הברק גם באפליקציה בטלפון?",
+  "doc_type": "חוקי משחק",
+  "expected_files": [],
+  "expected_answer": "אין מידע במאגר. המערכת צריכה לסרב לענות.",
+  "answerable": false
+ },
+ {
+  "id": 501,
+  "category": "מחיר: משחק מול ערכה וקטלוג ישן",
+  "question": "היי, כמה עולה שוק הפלאים כרגע?",
+  "doc_type": "קטלוג מוצרים",
+  "expected_files": [
+   "catalog_2025.md"
+  ],
+  "expected_answer": "169 ₪ בקטלוג הנוכחי (בקטלוג הקודם 159 ₪).",
+  "expected_values": [
+   "169"
+  ],
+  "wrong_values": [
+   "159",
+   "249"
+  ],
+  "answerable": true
+ },
+ {
+  "id": 502,
+  "category": "מחיר: משחק מול ערכה וקטלוג ישן",
+  "question": "אני רוצה לקנות את חוטפי המפות. מה המחיר?",
+  "doc_type": "קטלוג מוצרים",
+  "expected_files": [
+   "catalog_2025.md"
+  ],
+  "expected_answer": "89 ₪ בקטלוג הנוכחי (בקטלוג הקודם 79 ₪).",
+  "expected_values": [
+   "89"
+  ],
+  "wrong_values": [
+   "79",
+   "189"
+  ],
+  "answerable": true
+ },
+ {
+  "id": 503,
+  "category": "מחיר: ערכה",
+  "question": "אם אני לוקחת את קוד הכוכבים ואת שוק הפלאים ביחד, כמה אני משלמת?",
+  "doc_type": "קטלוג מוצרים",
+  "expected_files": [
+   "catalog_gift_sets.md"
+  ],
+  "expected_answer": "ערכת ערב חברים, 249 ₪ (קנייה נפרדת 278 ₪, חיסכון של 29 ₪).",
+  "expected_values": [
+   "249"
+  ],
+  "wrong_values": [
+   "109",
+   "169"
+  ],
+  "answerable": true
+ },
+ {
+  "id": 504,
+  "category": "ניסוח לקוחה",
+  "question": "גרה בצפון. כמה ימים בערך עד שהחבילה מגיעה אליי?",
+  "doc_type": "מדיניות",
+  "expected_files": [
+   "shipping_policy_v2.md"
+  ],
+  "expected_answer": "3 עד 5 ימי עסקים (במדיניות הישנה 5 עד 7).",
+  "answerable": true
+ },
+ {
+  "id": 505,
+  "category": "אין תשובה במאגר",
+  "question": "מי המאייר שיצר את האיורים של מסע הצבעים?",
+  "doc_type": "חוקי משחק",
+  "expected_files": [],
+  "expected_answer": "אין מידע במאגר. המערכת צריכה לסרב לענות.",
+  "answerable": false
+ },
+ {
+  "id": 506,
+  "category": "ניסוח לקוחה, חלק חסר",
+  "question": "פתחתי את הקופסה וגיליתי שחסרות קוביות. מה הצעד הבא?",
+  "doc_type": "שאלות נפוצות ושירות לקוחות",
+  "expected_files": [
+   "faq_missing_parts.pdf",
+   "warranty_policy.pdf"
+  ],
+  "expected_answer": "ממלאים טופס חלקים חסרים באתר עם תמונה, והחלק נשלח בחינם בתוך 5 ימי עסקים.",
+  "answerable": true
+ }
+]

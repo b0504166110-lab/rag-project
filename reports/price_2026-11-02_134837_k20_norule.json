@@ -1,0 +1,300 @@
+{
+  "timestamp": "2026-11-02_134837",
+  "label": "k20_norule",
+  "config": {
+    "retrieve_k": 20,
+    "rerank_group": 10,
+    "price_rule": false,
+    "runs": 5
+  },
+  "totals": {
+    "correct": 20,
+    "refusal": 0,
+    "wrong": 5,
+    "no_price": 0,
+    "mixed": 0
+  },
+  "tokens": 150300,
+  "results": [
+    {
+      "id": 901,
+      "question": "כמה עולה עמק הדבורים?",
+      "counts": {
+        "correct": 5,
+        "refusal": 0,
+        "wrong": 0,
+        "no_price": 0,
+        "mixed": 0
+      },
+      "answers": [
+        {
+          "class": "correct",
+          "answer": "עמק הדבורים עולה 269 ₪.",
+          "sent": [
+            "catalog_gift_sets.md",
+            "catalog_2025.md",
+            "catalog_expansions.md"
+          ]
+        },
+        {
+          "class": "correct",
+          "answer": "עמק הדבורים עולה 269 ₪.",
+          "sent": [
+            "catalog_gift_sets.md",
+            "catalog_2025.md",
+            "catalog_expansions.md"
+          ]
+        },
+        {
+          "class": "correct",
+          "answer": "עמק הדבורים עולה 269 ₪.",
+          "sent": [
+            "catalog_gift_sets.md",
+            "catalog_2025.md",
+            "catalog_expansions.md"
+          ]
+        },
+        {
+          "class": "correct",
+          "answer": "עמק הדבורים עולה 269 ₪.",
+          "sent": [
+            "catalog_gift_sets.md",
+            "catalog_2025.md",
+            "catalog_expansions.md"
+          ]
+        },
+        {
+          "class": "correct",
+          "answer": "עמק הדבורים עולה 269 ₪.",
+          "sent": [
+            "catalog_gift_sets.md",
+            "catalog_2025.md",
+            "catalog_expansions.md"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 304,
+      "question": "אני מחפשת מתנה לילד שלי בן 7. איזה משחק מתאים ובכמה זה עולה?",
+      "counts": {
+        "correct": 0,
+        "refusal": 0,
+        "wrong": 5,
+        "no_price": 0,
+        "mixed": 0
+      },
+      "answers": [
+        {
+          "class": "wrong",
+          "answer": "המשחק המתאים לילד שלך בן 7 הוא מסע הצבעים, והמחיר שלו הוא 189 ₪.",
+          "sent": [
+            "catalog_gift_sets.md",
+            "rules_masa_hatzvaim.md"
+          ]
+        },
+        {
+          "class": "wrong",
+          "answer": "המשחק המתאים לילד שלך בן 7 הוא מסע הצבעים, והמחיר שלו הוא 189 ₪.",
+          "sent": [
+            "catalog_gift_sets.md",
+            "rules_masa_hatzvaim.md"
+          ]
+        },
+        {
+          "class": "wrong",
+          "answer": "המשחק המתאים לילד שלך בן 7 הוא מסע הצבעים, והמחיר שלו הוא 189 ₪.",
+          "sent": [
+            "catalog_gift_sets.md",
+            "rules_masa_hatzvaim.md"
+          ]
+        },
+        {
+          "class": "wrong",
+          "answer": "המשחק המתאים לילד שלך בן 7 הוא מסע הצבעים, והמחיר שלו הוא 189 ₪.",
+          "sent": [
+            "catalog_gift_sets.md",
+            "rules_masa_hatzvaim.md"
+          ]
+        },
+        {
+          "class": "wrong",
+          "answer": "המשחק המתאים לילד שלך בן 7 הוא מסע הצבעים, והמחיר שלו הוא 189 ₪.",
+          "sent": [
+            "catalog_gift_sets.md",
+            "rules_masa_hatzvaim.md"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 501,
+      "question": "היי, כמה עולה שוק הפלאים כרגע?",
+      "counts": {
+        "correct": 5,
+        "refusal": 0,
+        "wrong": 0,
+        "no_price": 0,
+        "mixed": 0
+      },
+      "answers": [
+        {
+          "class": "correct",
+          "answer": "שוק הפלאים עולה 169 ₪ כרגע.",
+          "sent": [
+            "catalog_2025.md",
+            "catalog_2025.md",
+            "catalog_2024.md"
+          ]
+        },
+        {
+          "class": "correct",
+          "answer": "שוק הפלאים עולה 169 ₪ כרגע.",
+          "sent": [
+            "catalog_2025.md",
+            "catalog_2025.md",
+            "catalog_2024.md"
+          ]
+        },
+        {
+          "class": "correct",
+          "answer": "שוק הפלאים עולה 169 ₪.",
+          "sent": [
+            "catalog_2025.md",
+            "catalog_2025.md",
+            "catalog_2024.md"
+          ]
+        },
+        {
+          "class": "correct",
+          "answer": "שוק הפלאים עולה 169 ₪.",
+          "sent": [
+            "catalog_2025.md",
+            "catalog_2025.md",
+            "catalog_2024.md"
+          ]
+        },
+        {
+          "class": "correct",
+          "answer": "שוק הפלאים עולה 169 ₪.",
+          "sent": [
+            "catalog_2025.md",
+            "catalog_2025.md",
+            "catalog_2024.md"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 502,
+      "question": "אני רוצה לקנות את חוטפי המפות. מה המחיר?",
+      "counts": {
+        "correct": 5,
+        "refusal": 0,
+        "wrong": 0,
+        "no_price": 0,
+        "mixed": 0
+      },
+      "answers": [
+        {
+          "class": "correct",
+          "answer": "חוטפי המפות עולה 89 ₪.",
+          "sent": [
+            "catalog_gift_sets.md",
+            "catalog_2025.md"
+          ]
+        },
+        {
+          "class": "correct",
+          "answer": "חוטפי המפות עולה 89 ₪.",
+          "sent": [
+            "catalog_gift_sets.md",
+            "catalog_2025.md"
+          ]
+        },
+        {
+          "class": "correct",
+          "answer": "חוטפי המפות עולה 89 ₪.",
+          "sent": [
+            "catalog_gift_sets.md",
+            "catalog_2025.md"
+          ]
+        },
+        {
+          "class": "correct",
+          "answer": "חוטפי המפות עולה 89 ₪.",
+          "sent": [
+            "catalog_gift_sets.md",
+            "catalog_2025.md"
+          ]
+        },
+        {
+          "class": "correct",
+          "answer": "חוטפי המפות עולה 89 ₪.",
+          "sent": [
+            "catalog_gift_sets.md",
+            "catalog_2025.md"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 503,
+      "question": "אם אני לוקחת את קוד הכוכבים ואת שוק הפלאים ביחד, כמה אני משלמת?",
+      "counts": {
+        "correct": 5,
+        "refusal": 0,
+        "wrong": 0,
+        "no_price": 0,
+        "mixed": 0
+      },
+      "answers": [
+        {
+          "class": "correct",
+          "answer": "אם אני לוקחת את קוד הכוכבים ואת שוק הפלאים ביחד, אני משלמת 249 ₪.",
+          "sent": [
+            "catalog_gift_sets.md",
+            "catalog_2025.md",
+            "release_kod_hakochavim.pdf"
+          ]
+        },
+        {
+          "class": "correct",
+          "answer": "אם אני לוקחת את קוד הכוכבים ואת שוק הפלאים ביחד, אני משלמת 249 ₪.",
+          "sent": [
+            "catalog_gift_sets.md",
+            "catalog_2025.md",
+            "release_kod_hakochavim.pdf"
+          ]
+        },
+        {
+          "class": "correct",
+          "answer": "אם אני לוקחת את קוד הכוכבים ואת שוק הפלאים ביחד, אני משלמת 249 ₪.",
+          "sent": [
+            "catalog_gift_sets.md",
+            "catalog_2025.md",
+            "release_kod_hakochavim.pdf"
+          ]
+        },
+        {
+          "class": "correct",
+          "answer": "אם אני לוקחת את קוד הכוכבים ואת שוק הפלאים ביחד, אני משלמת 249 ₪.",
+          "sent": [
+            "catalog_gift_sets.md",
+            "catalog_2025.md",
+            "release_kod_hakochavim.pdf"
+          ]
+        },
+        {
+          "class": "correct",
+          "answer": "אם אני לוקחת את קוד הכוכבים ואת שוק הפלאים ביחד, אני משלמת 249 ₪.",
+          "sent": [
+            "catalog_gift_sets.md",
+            "catalog_2025.md",
+            "release_kod_hakochavim.pdf"
+          ]
+        }
+      ]
+    }
+  ]
+}

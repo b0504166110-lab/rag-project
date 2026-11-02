@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "category": "ישירה",
+    "question": "כמה קומות צריך לבנות כדי לנצח במגדלי הברק במהדורה השנייה?",
+    "doc_type": "חוקי משחק",
+    "expected_files": ["rules_migdalei_barak.md", "release_migdalei_barak_2nd.md"],
+    "expected_answer": "8 קומות (במהדורה הראשונה היעד היה 7 קומות).",
+    "answerable": true
+  },
+  {
+    "id": 2,
+    "category": "ישירה",
+    "question": "תוך כמה ימים מקבלים החזר כספי אחרי שהמוצר מגיע למחסן?",
+    "doc_type": "מדיניות",
+    "expected_files": ["returns_policy_v2.md"],
+    "expected_answer": "תוך 7 ימי עסקים מקבלת המוצר במחסן, לאמצעי התשלום המקורי.",
+    "answerable": true
+  },
+  {
+    "id": 3,
+    "category": "ניסוח שונה מהמסמך",
+    "question": "קניתי משחק, פתחתי אותו ועכשיו התחרטתי. אפשר להחזיר?",
+    "doc_type": "מדיניות",
+    "expected_files": ["returns_policy_v2.md"],
+    "expected_answer": "כן. אפשר להחזיר בתוך 30 ימים מקבלת המוצר, אם המשחק שלם וכולל את כל החלקים והחוברת, ולא שיחקו בו יותר מפעמיים.",
+    "answerable": true
+  },
+  {
+    "id": 4,
+    "category": "ניסוח שונה מהמסמך",
+    "question": "עד מתי אפשר לפנות לשירות הלקוחות בימי שישי?",
+    "doc_type": "שאלות נפוצות ושירות לקוחות",
+    "expected_files": ["faq_service_hours.md"],
+    "expected_answer": "בימי שישי שירות הלקוחות פעיל מ-09:00 עד 12:00, כלומר עד השעה 12:00.",
+    "answerable": true
+  },
+  {
+    "id": 5,
+    "category": "פרט מדויק",
+    "question": "מה המק\"ט של קובייה חלופית למסע הצבעים וכמה היא עולה?",
+    "doc_type": "קטלוג מוצרים",
+    "expected_files": ["catalog_accessories.pdf"],
+    "expected_answer": "המק\"ט הוא AC-404 והמחיר 9 ₪.",
+    "answerable": true
+  },
+  {
+    "id": 6,
+    "category": "פרט מדויק",
+    "question": "כמה עולה ים של אבנים לפי הקטלוג הנוכחי?",
+    "doc_type": "קטלוג מוצרים",
+    "expected_files": ["catalog_2025.md"],
+    "expected_answer": "149 ₪ בקטלוג הנוכחי (בקטלוג הקודם היה 139 ₪).",
+    "answerable": true
+  },
+  {
+    "id": 7,
+    "category": "כמה מסמכים",
+    "question": "איך השתנו תנאי המשלוח החינם וזמן האספקה בין המדיניות הישנה לחדשה?",
+    "doc_type": "מדיניות",
+    "expected_files": ["shipping_policy_v1.md", "shipping_policy_v2.md"],
+    "expected_answer": "במדיניות הישנה משלוח חינם מ-250 ₪ וזמן אספקה של 5 עד 7 ימי עסקים. במדיניות החדשה משלוח חינם מ-199 ₪ וזמן אספקה של 3 עד 5 ימי עסקים.",
+    "answerable": true
+  },
+  {
+    "id": 8,
+    "category": "פרט מדויק",
+    "question": "כמה נקודות שווה צנצנת דבש עם חותמת מלכה בעמק הדבורים?",
+    "doc_type": "חוקי משחק",
+    "expected_files": ["rules_emek_hadvorim.pdf"],
+    "expected_answer": "5 נקודות (צנצנת דבש רגילה שווה 3 נקודות).",
+    "answerable": true
+  },
+  {
+    "id": 9,
+    "category": "אין תשובה במאגר",
+    "question": "מהו מספר הפקס של שירות הלקוחות?",
+    "doc_type": "שאלות נפוצות ושירות לקוחות",
+    "expected_files": [],
+    "expected_answer": "אין מידע במאגר. המערכת צריכה לסרב לענות.",
+    "answerable": false
+  },
+  {
+    "id": 10,
+    "category": "אין תשובה במאגר",
+    "question": "כמה עותקים נמכרו ממגדלי הברק בשנה הראשונה?",
+    "doc_type": "היסטוריית החברה והודעות",
+    "expected_files": [],
+    "expected_answer": "אין מידע במאגר. המערכת צריכה לסרב לענות.",
+    "answerable": false
+  }
+]

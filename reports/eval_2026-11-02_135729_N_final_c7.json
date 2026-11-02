@@ -1,0 +1,842 @@
+{
+  "timestamp": "2026-11-02T13:57:29",
+  "label": "N_final_c7",
+  "config": {
+    "llm": "gpt-4o-mini",
+    "embedding": "text-embedding-3-large",
+    "chunking": "sentence",
+    "chunk_size": 512,
+    "chunk_overlap": 50,
+    "retrieve_k": 20,
+    "rerank_top": 3,
+    "rerank_group": 10,
+    "rerank_min_relevant": 5,
+    "send_only_relevant": true,
+    "answer_mode": "evidence"
+  },
+  "summary": {
+    "n_questions": 5,
+    "n_answerable": 4,
+    "n_unanswerable": 1,
+    "recall_at_3": 1.0,
+    "recall_at_10": 1.0,
+    "recall_pool": 1.0,
+    "avg_chunks_approved": 1.2,
+    "avg_chunks_sent": 1.4,
+    "mrr": 1.0,
+    "final_context_recall": 0.875,
+    "faithfulness": 0.75,
+    "answer_correctness_answerable": 0.75,
+    "correct_refusal_rate": 1.0,
+    "false_refusal_rate": 0.0,
+    "game_filters": 1,
+    "retries": 0,
+    "avg_seconds": 17.0,
+    "total_wall_seconds": 92.9,
+    "pipeline_llm_tokens": 28377,
+    "avg_pipeline_llm_tokens_per_question": 5675.4,
+    "judge_tokens": 2970,
+    "actual_llm_cost_usd": 0.0049666499999999995
+  },
+  "results": [
+    {
+      "id": 601,
+      "category": "ניסוח לקוחה: מחיר משחק בודד מול ערכה",
+      "question": "אני רוצה לקנות רק את מסע הצבעים, בלי הערכה. כמה זה עולה?",
+      "answerable": true,
+      "expected_type": "קטלוג מוצרים",
+      "expected_files": [
+        "catalog_2025.md"
+      ],
+      "expected_answer": "129 ₪ (ולא 189 ₪ של ערכת המשפחה).",
+      "answer": "מסע הצבעים עולה 129 ₪.",
+      "is_refusal": false,
+      "games": [
+        "מסע הצבעים"
+      ],
+      "retried": false,
+      "retrieved": [
+        {
+          "file": "catalog_2025.md",
+          "section": "1. משחקי ליבה | 2. הערות",
+          "vector_score": 0.5103,
+          "rerank_score": 10.0
+        },
+        {
+          "file": "catalog_2024.md",
+          "section": "1. משחקי ליבה | 2. הערות",
+          "vector_score": 0.503,
+          "rerank_score": 10.0
+        },
+        {
+          "file": "faq_gameplay_support.md",
+          "section": "3. האם יש חוקים להורדה? | 4. מאיזה גיל מתאים מסע הצבעים?",
+          "vector_score": 0.5489,
+          "rerank_score": 0.0
+        },
+        {
+          "file": "faq_missing_parts.pdf",
+          "section": "1. חסר חלק בקופסה, מה עושים? | 2. עד מתי אפשר לבקש חלק? | 3. אפשר לקנות חלקים נפרדים?",
+          "vector_score": 0.5471,
+          "rerank_score": 0.0
+        },
+        {
+          "file": "faq_club.md",
+          "section": "1. מה זה מועדון שבילי? | 2. מה מקבלים? | 3. האם ההנחה חלה על אביזרים? ...",
+          "vector_score": 0.4988,
+          "rerank_score": 0.0
+        },
+        {
+          "file": "catalog_gift_sets.md",
+          "section": "1. ערכות | 2. חיסכון | 3. אריזה",
+          "vector_score": 0.5694,
+          "rerank_score": 0.0
+        },
+        {
+          "file": "catalog_gift_sets.md",
+          "section": "3. אריזה",
+          "vector_score": 0.526,
+          "rerank_score": 0.0
+        },
+        {
+          "file": "catalog_accessories.pdf",
+          "section": "1. אביזרים | 2. הערות",
+          "vector_score": 0.5153,
+          "rerank_score": 0.0
+        },
+        {
+          "file": "catalog_expansions.md",
+          "section": "1. תוספות למשחקים קיימים | 2. תוכן התוספות",
+          "vector_score": 0.507,
+          "rerank_score": 0.0
+        },
+        {
+          "file": "catalog_2025.md",
+          "section": "2. הערות",
+          "vector_score": 0.4975,
+          "rerank_score": 0.0
+        },
+        {
+          "file": "returns_policy_v2.md",
+          "section": "3. החזר כספי | 4. עלות המשלוח | 5. החלפה ...",
+          "vector_score": 0.5152,
+          "rerank_score": 0.0
+        },
+        {
+          "file": "shipping_policy_v2.md",
+          "section": "1. עלות משלוח | 2. זמני אספקה | 3. נקודות איסוף ...",
+          "vector_score": 0.5005,
+          "rerank_score": 0.0
+        },
+        {
+          "file": "warranty_policy.pdf",
+          "section": "3. מה אינו מכוסה | 4. תהליך הטיפול",
+          "vector_score": 0.4988,
+          "rerank_score": 0.0
+        },
+        {
+          "file": "rules_masa_hatzvaim.md",
+          "section": "1. סקירה כללית | 2. תכולת המשחק | 3. הכנה ...",
+          "vector_score": 0.5845,
+          "rerank_score": 0.0
+        },
+        {
+          "file": "rules_masa_hatzvaim.md",
+          "section": "4. מהלך התור | 5. כרטיסי נוף | 6. אסימוני מסע",
+          "vector_score": 0.5725,
+          "rerank_score": 0.0
+        },
+        {
+          "file": "rules_masa_hatzvaim.md",
+          "section": "6. אסימוני מסע | 7. סיום",
+          "vector_score": 0.532,
+          "rerank_score": 0.0
+        },
+        {
+          "file": "catalog_2024.md",
+          "section": "2. הערות",
+          "vector_score": 0.4971,
+          "rerank_score": 0.0
+        },
+        {
+          "file": "returns_policy_v1.md",
+          "section": "4. עלות המשלוח | 5. יצירת קשר",
+          "vector_score": 0.5126,
+          "rerank_score": 0.0
+        },
+        {
+          "file": "shipping_policy_v1.md",
+          "section": "1. עלות משלוח | 2. זמני אספקה | 3. איסוף עצמי",
+          "vector_score": 0.5088,
+          "rerank_score": 0.0
+        },
+        {
+          "file": "returns_policy_v1.md",
+          "section": "1. תקופת ההחזרה | 2. מצב המוצר | 3. החזר כספי ...",
+          "vector_score": 0.5016,
+          "rerank_score": 0.0
+        }
+      ],
+      "selected": [
+        {
+          "file": "catalog_2025.md",
+          "section": "1. משחקי ליבה | 2. הערות"
+        },
+        {
+          "file": "catalog_2024.md",
+          "section": "1. משחקי ליבה | 2. הערות"
+        }
+      ],
+      "seconds": 70.91,
+      "tokens": {
+        "rerank_prompt": 4619,
+        "rerank_completion": 66,
+        "answer_prompt": 1012,
+        "answer_completion": 59,
+        "total_llm": 5756,
+        "question_embedding_est": 55
+      },
+      "recall_at_3": 1.0,
+      "recall_at_10": 1.0,
+      "recall_pool": 1.0,
+      "rr": 1.0,
+      "final_recall": 1.0,
+      "faithfulness": 0.0,
+      "correctness": 1.0
+    },
+    {
+      "id": 602,
+      "category": "ניסוח לקוחה: מחיר ערכה",
+      "question": "כמה עולה ערכת האסטרטגיה?",
+      "answerable": true,
+      "expected_type": "קטלוג מוצרים",
+      "expected_files": [
+        "catalog_gift_sets.md"
+      ],
+      "expected_answer": "429 ₪ (מחיר נפרד של שני המשחקים 478 ₪).",
+      "answer": "ערכת האסטרטגיה עולה 429 ₪.",
+      "is_refusal": false,
+      "games": [],
+      "retried": false,
+      "retrieved": [
+        {
+          "file": "catalog_gift_sets.md",
+          "section": "1. ערכות | 2. חיסכון | 3. אריזה",
+          "vector_score": 0.6213,
+          "rerank_score": 10.0
+        },
+        {
+          "file": "faq_missing_parts.pdf",
+          "section": "1. חסר חלק בקופסה, מה עושים? | 2. עד מתי אפשר לבקש חלק? | 3. אפשר לקנות חלקים נפרדים?",
+          "vector_score": 0.5133,
+          "rerank_score": 0.0
+        },
+        {
+          "file": "catalog_2025.md",
+          "section": "1. משחקי ליבה | 2. הערות",
+          "vector_score": 0.5314,
+          "rerank_score": 0.0
+        },
+        {
+          "file": "catalog_2025.md",
+          "section": "2. הערות",
+          "vector_score": 0.5265,
+          "rerank_score": 0.0
+        },
+        {
+          "file": "catalog_expansions.md",
+          "section": "1. תוספות למשחקים קיימים | 2. תוכן התוספות",
+          "vector_score": 0.5179,
+          "rerank_score": 0.0
+        },
+        {
+          "file": "catalog_accessories.pdf",
+          "section": "1. אביזרים | 2. הערות",
+          "vector_score": 0.5139,
+          "rerank_score": 0.0
+        },
+        {
+          "file": "catalog_gift_sets.md",
+          "section": "3. אריזה",
+          "vector_score": 0.5078,
+          "rerank_score": 0.0
+        },
+        {
+          "file": "catalog_expansions.md",
+          "section": "2. תוכן התוספות | 3. תאימות",
+          "vector_score": 0.5051,
+          "rerank_score": 0.0
+        },
+        {
+          "file": "returns_policy_v2.md",
+          "section": "3. החזר כספי | 4. עלות המשלוח | 5. החלפה ...",
+          "vector_score": 0.509,
+          "rerank_score": 0.0
+        },
+        {
+          "file": "shipping_policy_v2.md",
+          "section": "1. עלות משלוח | 2. זמני אספקה | 3. נקודות איסוף ...",
+          "vector_score": 0.5027,
+          "rerank_score": 0.0
+        },
+        {
+          "file": "announcement_new_warehouse.md",
+          "section": "1. מה זה משנה ללקוחות",
+          "vector_score": 0.5072,
+          "rerank_score": 0.0
+        },
+        {
+          "file": "rules_kod_hakochavim.pdf",
+          "section": "1. סקירה כללית קוד הכוכבים הוא משחק ניחוש בקבוצות ל-2 עד 8 שחקנים, בני 10 ומעלה. משך משחק הוא כ-30 דקות. שתי קבוצות מתחרות באיתור כוכבים נסתרים על לוח כוכבים של 25 קלפים. | 2. תכולת המשחק 100 קלפי כוכבים דו-צדדיים, 40 קלפי מפתח, מעמד לקלפים, 18 אסימוני צוות וחוברת זו. | 3. הכנה",
+          "vector_score": 0.5512,
+          "rerank_score": 0.0
+        },
+        {
+          "file": "rules_kod_hakochavim.pdf",
+          "section": "5. ניחוש | 6. סיום | 7. גרסת שני שחקנים",
+          "vector_score": 0.5284,
+          "rerank_score": 0.0
+        },
+        {
+          "file": "rules_kod_hakochavim.pdf",
+          "section": "3. הכנה | 4. תור המפקד | 5. ניחוש",
+          "vector_score": 0.5283,
+          "rerank_score": 0.0
+        },
+        {
+          "file": "release_kod_hakochavim.pdf",
+          "section": "1. פרטי ההשקה | 2. תוספת",
+          "vector_score": 0.5653,
+          "rerank_score": 0.0
+        },
+        {
+          "file": "rules_masa_hatzvaim.md",
+          "section": "4. מהלך התור | 5. כרטיסי נוף | 6. אסימוני מסע",
+          "vector_score": 0.5255,
+          "rerank_score": 0.0
+        },
+        {
+          "file": "catalog_2024.md",
+          "section": "2. הערות",
+          "vector_score": 0.5564,
+          "rerank_score": 0.0
+        },
+        {
+          "file": "catalog_2024.md",
+          "section": "1. משחקי ליבה | 2. הערות",
+          "vector_score": 0.5153,
+          "rerank_score": 0.0
+        },
+        {
+          "file": "shipping_policy_v1.md",
+          "section": "1. עלות משלוח | 2. זמני אספקה | 3. איסוף עצמי",
+          "vector_score": 0.5093,
+          "rerank_score": 0.0
+        },
+        {
+          "file": "returns_policy_v1.md",
+          "section": "4. עלות המשלוח | 5. יצירת קשר",
+          "vector_score": 0.507,
+          "rerank_score": 0.0
+        }
+      ],
+      "selected": [
+        {
+          "file": "catalog_gift_sets.md",
+          "section": "1. ערכות | 2. חיסכון | 3. אריזה"
+        }
+      ],
+      "seconds": 3.74,
+      "tokens": {
+        "rerank_prompt": 4722,
+        "rerank_completion": 66,
+        "answer_prompt": 650,
+        "answer_completion": 31,
+        "total_llm": 5469,
+        "question_embedding_est": 29
+      },
+      "recall_at_3": 1.0,
+      "recall_at_10": 1.0,
+      "recall_pool": 1.0,
+      "rr": 1.0,
+      "final_recall": 1.0,
+      "faithfulness": 1.0,
+      "correctness": 1.0
+    },
+    {
+      "id": 603,
+      "category": "ניסוח לקוחה, אין תשובה במאגר",
+      "question": "יש לכם חנות פיזית שאפשר לבוא אליה לראות את המשחקים?",
+      "answerable": false,
+      "expected_type": "שאלות נפוצות ושירות לקוחות",
+      "expected_files": [],
+      "expected_answer": "אין מידע במאגר. המערכת צריכה לסרב לענות.",
+      "answer": "אין לי מספיק מידע במאגר כדי לענות על השאלה הזו.",
+      "is_refusal": true,
+      "games": [],
+      "retried": false,
+      "retrieved": [
+        {
+          "file": "history_company.md",
+          "section": "1. ההקמה | 2. ציוני דרך | 3. עובדים",
+          "vector_score": 0.5432,
+          "rerank_score": 0.0
+        },
+        {
+          "file": "faq_club.md",
+          "section": "1. מה זה מועדון שבילי? | 2. מה מקבלים? | 3. האם ההנחה חלה על אביזרים? ...",
+          "vector_score": 0.5673,
+          "rerank_score": 0.0
+        },
+        {
+          "file": "faq_gameplay_support.md",
+          "section": "1. איזו מהדורה של מגדלי הברק יש לי? | 2. מה עושים אם אין מספיק שחקנים בעמק הדבורים? | 3. האם יש חוקים להורדה? ...",
+          "vector_score": 0.5284,
+          "rerank_score": 0.0
+        },
+        {
+          "file": "faq_missing_parts.pdf",
+          "section": "1. חסר חלק בקופסה, מה עושים? | 2. עד מתי אפשר לבקש חלק? | 3. אפשר לקנות חלקים נפרדים?",
+          "vector_score": 0.5196,
+          "rerank_score": 0.0
+        },
+        {
+          "file": "catalog_2025.md",
+          "section": "2. הערות",
+          "vector_score": 0.5707,
+          "rerank_score": 0.0
+        },
+        {
+          "file": "catalog_accessories.pdf",
+          "section": "1. אביזרים | 2. הערות",
+          "vector_score": 0.5598,
+          "rerank_score": 0.0
+        },
+        {
+          "file": "catalog_2025.md",
+          "section": "1. משחקי ליבה | 2. הערות",
+          "vector_score": 0.5596,
+          "rerank_score": 0.0
+        },
+        {
+          "file": "catalog_2025.md",
+          "section": "1. משחקי ליבה",
+          "vector_score": 0.5493,
+          "rerank_score": 0.0
+        },
+        {
+          "file": "catalog_gift_sets.md",
+          "section": "1. ערכות | 2. חיסכון | 3. אריזה",
+          "vector_score": 0.5387,
+          "rerank_score": 0.0
+        },
+        {
+          "file": "catalog_expansions.md",
+          "section": "1. תוספות למשחקים קיימים | 2. תוכן התוספות",
+          "vector_score": 0.5265,
+          "rerank_score": 0.0
+        },
+        {
+          "file": "returns_policy_v2.md",
+          "section": "1. תקופת ההחזרה | 2. מצב המוצר | 3. החזר כספי",
+          "vector_score": 0.5353,
+          "rerank_score": 0.0
+        },
+        {
+          "file": "warranty_policy.pdf",
+          "section": "3. מה אינו מכוסה | 4. תהליך הטיפול",
+          "vector_score": 0.5333,
+          "rerank_score": 0.0
+        },
+        {
+          "file": "shipping_policy_v2.md",
+          "section": "4. משלוחים לחו\"ל | 5. הערה",
+          "vector_score": 0.5225,
+          "rerank_score": 0.0
+        },
+        {
+          "file": "warranty_policy.pdf",
+          "section": "1. תקופת האחריות | 2. מה מכוסה | 3. מה אינו מכוסה ...",
+          "vector_score": 0.5142,
+          "rerank_score": 0.0
+        },
+        {
+          "file": "announcement_new_warehouse.md",
+          "section": "1. מה זה משנה ללקוחות",
+          "vector_score": 0.5325,
+          "rerank_score": 0.0
+        },
+        {
+          "file": "release_migdalei_barak_2nd.md",
+          "section": "1. מה חדש | 2. הנחת שדרוג",
+          "vector_score": 0.5179,
+          "rerank_score": 0.0
+        },
+        {
+          "file": "rules_emek_hadvorim.pdf",
+          "section": "8. סיום",
+          "vector_score": 0.5195,
+          "rerank_score": 0.0
+        },
+        {
+          "file": "release_kod_hakochavim.pdf",
+          "section": "1. פרטי ההשקה | 2. תוספת",
+          "vector_score": 0.5262,
+          "rerank_score": 0.0
+        },
+        {
+          "file": "rules_masa_hatzvaim.md",
+          "section": "1. סקירה כללית | 2. תכולת המשחק | 3. הכנה ...",
+          "vector_score": 0.5141,
+          "rerank_score": 0.0
+        },
+        {
+          "file": "catalog_2024.md",
+          "section": "1. משחקי ליבה | 2. הערות",
+          "vector_score": 0.5631,
+          "rerank_score": 0.0
+        }
+      ],
+      "selected": [
+        {
+          "file": "history_company.md",
+          "section": "1. ההקמה | 2. ציוני דרך | 3. עובדים"
+        }
+      ],
+      "seconds": 3.34,
+      "tokens": {
+        "rerank_prompt": 4794,
+        "rerank_completion": 66,
+        "answer_prompt": 612,
+        "answer_completion": 25,
+        "total_llm": 5497,
+        "question_embedding_est": 48
+      },
+      "faithfulness": 1.0,
+      "correctness": 1.0
+    },
+    {
+      "id": 604,
+      "category": "ניסוח לקוחה",
+      "question": "אני חברת מועדון. ההנחה שלי תחול גם אם אקנה שקיות אחסון לקלפים?",
+      "answerable": true,
+      "expected_type": "שאלות נפוצות ושירות לקוחות",
+      "expected_files": [
+        "faq_club.md",
+        "catalog_accessories.pdf"
+      ],
+      "expected_answer": "לא, הנחת המועדון חלה על משחקי הליבה בלבד ולא על אביזרים.",
+      "answer": "לא תחול הנחה על שקיות אחסון לקלפים.",
+      "is_refusal": false,
+      "games": [],
+      "retried": false,
+      "retrieved": [
+        {
+          "file": "faq_club.md",
+          "section": "1. מה זה מועדון שבילי? | 2. מה מקבלים? | 3. האם ההנחה חלה על אביזרים? ...",
+          "vector_score": 0.6048,
+          "rerank_score": 10.0
+        },
+        {
+          "file": "faq_missing_parts.pdf",
+          "section": "1. חסר חלק בקופסה, מה עושים? | 2. עד מתי אפשר לבקש חלק? | 3. אפשר לקנות חלקים נפרדים?",
+          "vector_score": 0.5415,
+          "rerank_score": 0.0
+        },
+        {
+          "file": "catalog_accessories.pdf",
+          "section": "1. אביזרים | 2. הערות",
+          "vector_score": 0.638,
+          "rerank_score": 0.0
+        },
+        {
+          "file": "catalog_2025.md",
+          "section": "2. הערות",
+          "vector_score": 0.5677,
+          "rerank_score": 0.0
+        },
+        {
+          "file": "catalog_gift_sets.md",
+          "section": "1. ערכות | 2. חיסכון | 3. אריזה",
+          "vector_score": 0.5437,
+          "rerank_score": 0.0
+        },
+        {
+          "file": "catalog_2025.md",
+          "section": "1. משחקי ליבה | 2. הערות",
+          "vector_score": 0.5186,
+          "rerank_score": 0.0
+        },
+        {
+          "file": "catalog_2025.md",
+          "section": "1. משחקי ליבה",
+          "vector_score": 0.5169,
+          "rerank_score": 0.0
+        },
+        {
+          "file": "catalog_gift_sets.md",
+          "section": "3. אריזה",
+          "vector_score": 0.5094,
+          "rerank_score": 0.0
+        },
+        {
+          "file": "catalog_expansions.md",
+          "section": "2. תוכן התוספות | 3. תאימות",
+          "vector_score": 0.508,
+          "rerank_score": 0.0
+        },
+        {
+          "file": "warranty_policy.pdf",
+          "section": "1. תקופת האחריות | 2. מה מכוסה | 3. מה אינו מכוסה ...",
+          "vector_score": 0.5417,
+          "rerank_score": 0.0
+        },
+        {
+          "file": "warranty_policy.pdf",
+          "section": "3. מה אינו מכוסה | 4. תהליך הטיפול",
+          "vector_score": 0.5162,
+          "rerank_score": 0.0
+        },
+        {
+          "file": "returns_policy_v2.md",
+          "section": "3. החזר כספי | 4. עלות המשלוח | 5. החלפה ...",
+          "vector_score": 0.505,
+          "rerank_score": 0.0
+        },
+        {
+          "file": "returns_policy_v2.md",
+          "section": "1. תקופת ההחזרה | 2. מצב המוצר | 3. החזר כספי",
+          "vector_score": 0.4993,
+          "rerank_score": 0.0
+        },
+        {
+          "file": "rules_migdalei_barak.md",
+          "section": "4. מהלך המשחק | 5. אסימוני ברק | 6. קלפי אתגר",
+          "vector_score": 0.5179,
+          "rerank_score": 0.0
+        },
+        {
+          "file": "rules_migdalei_barak.md",
+          "section": "3. הכנה למשחק | 4. מהלך המשחק",
+          "vector_score": 0.5007,
+          "rerank_score": 0.0
+        },
+        {
+          "file": "rules_migdalei_barak.md",
+          "section": "6. קלפי אתגר | 7. סיום המשחק | 8. שינויים במהדורה השנייה (גרסה 2.0)",
+          "vector_score": 0.4975,
+          "rerank_score": 0.0
+        },
+        {
+          "file": "rules_kod_hakochavim.pdf",
+          "section": "1. סקירה כללית קוד הכוכבים הוא משחק ניחוש בקבוצות ל-2 עד 8 שחקנים, בני 10 ומעלה. משך משחק הוא כ-30 דקות. שתי קבוצות מתחרות באיתור כוכבים נסתרים על לוח כוכבים של 25 קלפים. | 2. תכולת המשחק 100 קלפי כוכבים דו-צדדיים, 40 קלפי מפתח, מעמד לקלפים, 18 אסימוני צוות וחוברת זו. | 3. הכנה",
+          "vector_score": 0.499,
+          "rerank_score": 0.0
+        },
+        {
+          "file": "rules_masa_hatzvaim.md",
+          "section": "4. מהלך התור | 5. כרטיסי נוף | 6. אסימוני מסע",
+          "vector_score": 0.5103,
+          "rerank_score": 0.0
+        },
+        {
+          "file": "rules_chotfei_hamapot.md",
+          "section": "1. סקירה כללית | 2. תכולת המשחק | 3. הכנה ...",
+          "vector_score": 0.5048,
+          "rerank_score": 0.0
+        },
+        {
+          "file": "catalog_2024.md",
+          "section": "1. משחקי ליבה | 2. הערות",
+          "vector_score": 0.5157,
+          "rerank_score": 0.0
+        }
+      ],
+      "selected": [
+        {
+          "file": "faq_club.md",
+          "section": "1. מה זה מועדון שבילי? | 2. מה מקבלים? | 3. האם ההנחה חלה על אביזרים? ..."
+        }
+      ],
+      "seconds": 3.2,
+      "tokens": {
+        "rerank_prompt": 5002,
+        "rerank_completion": 66,
+        "answer_prompt": 619,
+        "answer_completion": 43,
+        "total_llm": 5730,
+        "question_embedding_est": 61
+      },
+      "recall_at_3": 1.0,
+      "recall_at_10": 1.0,
+      "recall_pool": 1.0,
+      "rr": 1.0,
+      "final_recall": 0.5,
+      "faithfulness": 1.0,
+      "correctness": 1.0
+    },
+    {
+      "id": 605,
+      "category": "ניסוח לקוחה",
+      "question": "שיחקנו פעמיים במשחק ועכשיו אני רוצה להחזיר אותו. אפשר, ותוך כמה זמן?",
+      "answerable": true,
+      "expected_type": "מדיניות",
+      "expected_files": [
+        "returns_policy_v2.md"
+      ],
+      "expected_answer": "כן, בתוך 30 ימים מיום קבלתו. משחק ששיחקו בו יותר מפעמיים לא יתקבל, אלא אם יש בו פגם.",
+      "answer": "לא ניתן להחזיר משחק ששיחקתם בו יותר מפעמיים.",
+      "is_refusal": false,
+      "games": [],
+      "retried": false,
+      "retrieved": [
+        {
+          "file": "returns_policy_v2.md",
+          "section": "1. תקופת ההחזרה | 2. מצב המוצר | 3. החזר כספי",
+          "vector_score": 0.5918,
+          "rerank_score": 10.0
+        },
+        {
+          "file": "returns_policy_v1.md",
+          "section": "1. תקופת ההחזרה | 2. מצב המוצר | 3. החזר כספי ...",
+          "vector_score": 0.5464,
+          "rerank_score": 10.0
+        },
+        {
+          "file": "warranty_policy.pdf",
+          "section": "3. מה אינו מכוסה | 4. תהליך הטיפול",
+          "vector_score": 0.5474,
+          "rerank_score": 0.0
+        },
+        {
+          "file": "returns_policy_v2.md",
+          "section": "3. החזר כספי | 4. עלות המשלוח | 5. החלפה ...",
+          "vector_score": 0.5333,
+          "rerank_score": 0.0
+        },
+        {
+          "file": "warranty_policy.pdf",
+          "section": "1. תקופת האחריות | 2. מה מכוסה | 3. מה אינו מכוסה ...",
+          "vector_score": 0.5256,
+          "rerank_score": 0.0
+        },
+        {
+          "file": "rules_migdalei_barak.md",
+          "section": "3. הכנה למשחק | 4. מהלך המשחק",
+          "vector_score": 0.5163,
+          "rerank_score": 0.0
+        },
+        {
+          "file": "rules_migdalei_barak.md",
+          "section": "8. שינויים במהדורה השנייה (גרסה 2.0)",
+          "vector_score": 0.5127,
+          "rerank_score": 0.0
+        },
+        {
+          "file": "rules_migdalei_barak.md",
+          "section": "4. מהלך המשחק | 5. אסימוני ברק | 6. קלפי אתגר",
+          "vector_score": 0.5106,
+          "rerank_score": 0.0
+        },
+        {
+          "file": "rules_emek_hadvorim.pdf",
+          "section": "5. הצבת פועלים | 6. הפקת דבש | 7. משחק סולו ...",
+          "vector_score": 0.5347,
+          "rerank_score": 0.0
+        },
+        {
+          "file": "rules_emek_hadvorim.pdf",
+          "section": "3. הכנה | 4. סבבים ועונות | 5. הצבת פועלים",
+          "vector_score": 0.5344,
+          "rerank_score": 0.0
+        },
+        {
+          "file": "rules_emek_hadvorim.pdf",
+          "section": "8. סיום",
+          "vector_score": 0.5247,
+          "rerank_score": 0.0
+        },
+        {
+          "file": "rules_kod_hakochavim.pdf",
+          "section": "5. ניחוש | 6. סיום | 7. גרסת שני שחקנים",
+          "vector_score": 0.5496,
+          "rerank_score": 0.0
+        },
+        {
+          "file": "rules_kod_hakochavim.pdf",
+          "section": "3. הכנה | 4. תור המפקד | 5. ניחוש",
+          "vector_score": 0.5119,
+          "rerank_score": 0.0
+        },
+        {
+          "file": "rules_kod_hakochavim.pdf",
+          "section": "1. סקירה כללית קוד הכוכבים הוא משחק ניחוש בקבוצות ל-2 עד 8 שחקנים, בני 10 ומעלה. משך משחק הוא כ-30 דקות. שתי קבוצות מתחרות באיתור כוכבים נסתרים על לוח כוכבים של 25 קלפים. | 2. תכולת המשחק 100 קלפי כוכבים דו-צדדיים, 40 קלפי מפתח, מעמד לקלפים, 18 אסימוני צוות וחוברת זו. | 3. הכנה",
+          "vector_score": 0.5117,
+          "rerank_score": 0.0
+        },
+        {
+          "file": "rules_masa_hatzvaim.md",
+          "section": "4. מהלך התור | 5. כרטיסי נוף | 6. אסימוני מסע",
+          "vector_score": 0.5154,
+          "rerank_score": 0.0
+        },
+        {
+          "file": "rules_masa_hatzvaim.md",
+          "section": "1. סקירה כללית | 2. תכולת המשחק | 3. הכנה ...",
+          "vector_score": 0.5117,
+          "rerank_score": 0.0
+        },
+        {
+          "file": "rules_masa_hatzvaim.md",
+          "section": "6. אסימוני מסע | 7. סיום",
+          "vector_score": 0.5094,
+          "rerank_score": 0.0
+        },
+        {
+          "file": "rules_chotfei_hamapot.md",
+          "section": "6. קלפי מלכודת | 7. סיום",
+          "vector_score": 0.5247,
+          "rerank_score": 0.0
+        },
+        {
+          "file": "rules_chotfei_hamapot.md",
+          "section": "1. סקירה כללית | 2. תכולת המשחק | 3. הכנה ...",
+          "vector_score": 0.516,
+          "rerank_score": 0.0
+        },
+        {
+          "file": "rules_chotfei_hamapot.md",
+          "section": "4. מהלך התור | 5. קלפי פעולה | 6. קלפי מלכודת",
+          "vector_score": 0.5097,
+          "rerank_score": 0.0
+        }
+      ],
+      "selected": [
+        {
+          "file": "returns_policy_v2.md",
+          "section": "1. תקופת ההחזרה | 2. מצב המוצר | 3. החזר כספי"
+        },
+        {
+          "file": "returns_policy_v1.md",
+          "section": "1. תקופת ההחזרה | 2. מצב המוצר | 3. החזר כספי ..."
+        }
+      ],
+      "seconds": 3.81,
+      "tokens": {
+        "rerank_prompt": 4906,
+        "rerank_completion": 66,
+        "answer_prompt": 902,
+        "answer_completion": 51,
+        "total_llm": 5925,
+        "question_embedding_est": 69
+      },
+      "recall_at_3": 1.0,
+      "recall_at_10": 1.0,
+      "recall_pool": 1.0,
+      "rr": 1.0,
+      "final_recall": 1.0,
+      "faithfulness": 1.0,
+      "correctness": 0.0
+    }
+  ]
+}

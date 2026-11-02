@@ -1,0 +1,1163 @@
+{
+  "timestamp": "2026-11-02T01:12:07",
+  "label": "small_final",
+  "config": {
+    "llm": "gpt-4o-mini",
+    "embedding": "text-embedding-3-small",
+    "chunking": "sentence",
+    "chunk_size": 512,
+    "chunk_overlap": 50,
+    "retrieve_k": 10,
+    "rerank_top": 3,
+    "classify_threshold": 0.4,
+    "rerank_min_relevant": 5
+  },
+  "summary": {
+    "n_questions": 10,
+    "n_answerable": 8,
+    "n_unanswerable": 2,
+    "recall_at_3": 0.6875,
+    "recall_at_10": 0.875,
+    "mrr": 0.775,
+    "final_context_recall": 0.6875,
+    "faithfulness": 0.8333333333333334,
+    "answer_correctness_answerable": 0.75,
+    "correct_refusal_rate": 1.0,
+    "false_refusal_rate": 0.25,
+    "classification_top1_accuracy": 0.7,
+    "filters_applied": 3,
+    "filters_applied_correct": 3,
+    "retries": 1,
+    "avg_seconds": 2.186,
+    "pipeline_llm_tokens": 35715,
+    "avg_pipeline_llm_tokens_per_question": 3571.5,
+    "judge_tokens": 5654,
+    "actual_llm_cost_usd": 0.0065077500000000005
+  },
+  "results": [
+    {
+      "id": 1,
+      "category": "ישירה",
+      "question": "כמה קומות צריך לבנות כדי לנצח במגדלי הברק במהדורה השנייה?",
+      "answerable": true,
+      "expected_type": "חוקי משחק",
+      "expected_files": [
+        "rules_migdalei_barak.md",
+        "release_migdalei_barak_2nd.md"
+      ],
+      "expected_answer": "8 קומות (במהדורה הראשונה היעד היה 7 קומות).",
+      "answer": "כדי לנצח במגדלי הברק במהדורה השנייה, צריך לבנות 8 קומות.",
+      "is_refusal": false,
+      "classify_scores": {
+        "חוקי משחק": 0.33691486876381993,
+        "קטלוג מוצרים": 0.1822561367249359,
+        "מדיניות": 0.22045345917506382,
+        "שאלות נפוצות ושירות לקוחות": 0.18339459415691972,
+        "היסטוריית החברה והודעות": 0.15233209749895077
+      },
+      "top_type": "חוקי משחק",
+      "top_score": 0.33691486876381993,
+      "applied_type": null,
+      "games": [
+        "מגדלי הברק"
+      ],
+      "retried": false,
+      "retrieved": [
+        {
+          "file": "rules_migdalei_barak.md",
+          "section": "6. קלפי אתגר | 7. סיום המשחק | 8. שינויים במהדורה השנייה (גרסה 2.0)",
+          "vector_score": 0.5969,
+          "rerank_score": 10.0
+        },
+        {
+          "file": "faq_gameplay_support.md",
+          "section": "1. איזו מהדורה של מגדלי הברק יש לי? | 2. מה עושים אם אין מספיק שחקנים בעמק הדבורים? | 3. האם יש חוקים להורדה? ...",
+          "vector_score": 0.5555,
+          "rerank_score": 0.0
+        },
+        {
+          "file": "catalog_2025.md",
+          "section": "2. הערות",
+          "vector_score": 0.538,
+          "rerank_score": 0.0
+        },
+        {
+          "file": "catalog_accessories.pdf",
+          "section": "1. אביזרים | 2. הערות",
+          "vector_score": 0.5225,
+          "rerank_score": 0.0
+        },
+        {
+          "file": "rules_migdalei_barak.md",
+          "section": "1. סקירה כללית | 2. תכולת המשחק | 3. הכנה למשחק",
+          "vector_score": 0.5895,
+          "rerank_score": 0.0
+        },
+        {
+          "file": "rules_migdalei_barak.md",
+          "section": "8. שינויים במהדורה השנייה (גרסה 2.0)",
+          "vector_score": 0.5874,
+          "rerank_score": 0.0
+        },
+        {
+          "file": "release_migdalei_barak_2nd.md",
+          "section": "1. מה חדש | 2. הנחת שדרוג",
+          "vector_score": 0.5812,
+          "rerank_score": 0.0
+        },
+        {
+          "file": "rules_migdalei_barak.md",
+          "section": "3. הכנה למשחק | 4. מהלך המשחק",
+          "vector_score": 0.5767,
+          "rerank_score": 0.0
+        },
+        {
+          "file": "rules_migdalei_barak.md",
+          "section": "4. מהלך המשחק | 5. אסימוני ברק | 6. קלפי אתגר",
+          "vector_score": 0.5565,
+          "rerank_score": 0.0
+        },
+        {
+          "file": "catalog_2024.md",
+          "section": "2. הערות",
+          "vector_score": 0.5355,
+          "rerank_score": 0.0
+        }
+      ],
+      "selected": [
+        {
+          "file": "rules_migdalei_barak.md",
+          "section": "6. קלפי אתגר | 7. סיום המשחק | 8. שינויים במהדורה השנייה (גרסה 2.0)"
+        },
+        {
+          "file": "faq_gameplay_support.md",
+          "section": "1. איזו מהדורה של מגדלי הברק יש לי? | 2. מה עושים אם אין מספיק שחקנים בעמק הדבורים? | 3. האם יש חוקים להורדה? ..."
+        },
+        {
+          "file": "catalog_2025.md",
+          "section": "2. הערות"
+        }
+      ],
+      "seconds": 3.02,
+      "tokens": {
+        "rerank_prompt": 2378,
+        "rerank_completion": 33,
+        "answer_prompt": 945,
+        "answer_completion": 24,
+        "total_llm": 3380,
+        "question_embedding_est": 55
+      },
+      "recall_at_3": 0.5,
+      "recall_at_10": 1.0,
+      "rr": 1.0,
+      "final_recall": 0.5,
+      "faithfulness": 1.0,
+      "correctness": 1.0
+    },
+    {
+      "id": 2,
+      "category": "ישירה",
+      "question": "תוך כמה ימים מקבלים החזר כספי אחרי שהמוצר מגיע למחסן?",
+      "answerable": true,
+      "expected_type": "מדיניות",
+      "expected_files": [
+        "returns_policy_v2.md"
+      ],
+      "expected_answer": "תוך 7 ימי עסקים מקבלת המוצר במחסן, לאמצעי התשלום המקורי.",
+      "answer": "ההחזר הכספי ניתן לאמצעי התשלום המקורי, בתוך 7 ימי עסקים מקבלת המוצר במחסן.",
+      "is_refusal": false,
+      "classify_scores": {
+        "חוקי משחק": 0.16840784161341038,
+        "קטלוג מוצרים": 0.3131033210409361,
+        "מדיניות": 0.4614451122263285,
+        "שאלות נפוצות ושירות לקוחות": 0.2893403646876417,
+        "היסטוריית החברה והודעות": 0.15261158973110003
+      },
+      "top_type": "מדיניות",
+      "top_score": 0.4614451122263285,
+      "applied_type": "מדיניות",
+      "games": [],
+      "retried": false,
+      "retrieved": [
+        {
+          "file": "returns_policy_v2.md",
+          "section": "1. תקופת ההחזרה | 2. מצב המוצר | 3. החזר כספי",
+          "vector_score": 0.6296,
+          "rerank_score": 10.0
+        },
+        {
+          "file": "returns_policy_v2.md",
+          "section": "3. החזר כספי | 4. עלות המשלוח | 5. החלפה ...",
+          "vector_score": 0.5843,
+          "rerank_score": 0.0
+        },
+        {
+          "file": "warranty_policy.pdf",
+          "section": "1. תקופת האחריות | 2. מה מכוסה | 3. מה אינו מכוסה ...",
+          "vector_score": 0.5572,
+          "rerank_score": 0.0
+        },
+        {
+          "file": "shipping_policy_v2.md",
+          "section": "1. עלות משלוח | 2. זמני אספקה | 3. נקודות איסוף ...",
+          "vector_score": 0.5303,
+          "rerank_score": 0.0
+        },
+        {
+          "file": "warranty_policy.pdf",
+          "section": "3. מה אינו מכוסה | 4. תהליך הטיפול",
+          "vector_score": 0.5277,
+          "rerank_score": 0.0
+        },
+        {
+          "file": "shipping_policy_v2.md",
+          "section": "4. משלוחים לחו\"ל | 5. הערה",
+          "vector_score": 0.4889,
+          "rerank_score": 0.0
+        },
+        {
+          "file": "returns_policy_v1.md",
+          "section": "1. תקופת ההחזרה | 2. מצב המוצר | 3. החזר כספי ...",
+          "vector_score": 0.6035,
+          "rerank_score": 0.0
+        },
+        {
+          "file": "returns_policy_v1.md",
+          "section": "4. עלות המשלוח | 5. יצירת קשר",
+          "vector_score": 0.5429,
+          "rerank_score": 0.0
+        },
+        {
+          "file": "shipping_policy_v1.md",
+          "section": "1. עלות משלוח | 2. זמני אספקה | 3. איסוף עצמי",
+          "vector_score": 0.5184,
+          "rerank_score": 0.0
+        }
+      ],
+      "selected": [
+        {
+          "file": "returns_policy_v2.md",
+          "section": "1. תקופת ההחזרה | 2. מצב המוצר | 3. החזר כספי"
+        },
+        {
+          "file": "returns_policy_v2.md",
+          "section": "3. החזר כספי | 4. עלות המשלוח | 5. החלפה ..."
+        },
+        {
+          "file": "warranty_policy.pdf",
+          "section": "1. תקופת האחריות | 2. מה מכוסה | 3. מה אינו מכוסה ..."
+        }
+      ],
+      "seconds": 1.86,
+      "tokens": {
+        "rerank_prompt": 1946,
+        "rerank_completion": 30,
+        "answer_prompt": 982,
+        "answer_completion": 30,
+        "total_llm": 2988,
+        "question_embedding_est": 54
+      },
+      "recall_at_3": 1.0,
+      "recall_at_10": 1.0,
+      "rr": 1.0,
+      "final_recall": 1.0,
+      "faithfulness": 1.0,
+      "correctness": 1.0
+    },
+    {
+      "id": 3,
+      "category": "ניסוח שונה מהמסמך",
+      "question": "קניתי משחק, פתחתי אותו ועכשיו התחרטתי. אפשר להחזיר?",
+      "answerable": true,
+      "expected_type": "מדיניות",
+      "expected_files": [
+        "returns_policy_v2.md"
+      ],
+      "expected_answer": "כן. אפשר להחזיר בתוך 30 ימים מקבלת המוצר, אם המשחק שלם וכולל את כל החלקים והחוברת, ולא שיחקו בו יותר מפעמיים.",
+      "answer": "אין לי מספיק מידע במאגר כדי לענות על השאלה הזו.",
+      "is_refusal": true,
+      "classify_scores": {
+        "חוקי משחק": 0.3798169667264497,
+        "קטלוג מוצרים": 0.382881444964997,
+        "מדיניות": 0.2186623150744021,
+        "שאלות נפוצות ושירות לקוחות": 0.32522217093227024,
+        "היסטוריית החברה והודעות": 0.3613341218669402
+      },
+      "top_type": "קטלוג מוצרים",
+      "top_score": 0.382881444964997,
+      "applied_type": null,
+      "games": [],
+      "retried": false,
+      "retrieved": [
+        {
+          "file": "catalog_accessories.pdf",
+          "section": "1. אביזרים | 2. הערות",
+          "vector_score": 0.5719,
+          "rerank_score": 0.0
+        },
+        {
+          "file": "catalog_2025.md",
+          "section": "1. משחקי ליבה | 2. הערות",
+          "vector_score": 0.5611,
+          "rerank_score": 0.0
+        },
+        {
+          "file": "rules_migdalei_barak.md",
+          "section": "3. הכנה למשחק | 4. מהלך המשחק",
+          "vector_score": 0.5715,
+          "rerank_score": 0.0
+        },
+        {
+          "file": "rules_migdalei_barak.md",
+          "section": "1. סקירה כללית | 2. תכולת המשחק | 3. הכנה למשחק",
+          "vector_score": 0.5555,
+          "rerank_score": 0.0
+        },
+        {
+          "file": "rules_emek_hadvorim.pdf",
+          "section": "3. הכנה | 4. סבבים ועונות | 5. הצבת פועלים",
+          "vector_score": 0.559,
+          "rerank_score": 0.0
+        },
+        {
+          "file": "rules_masa_hatzvaim.md",
+          "section": "1. סקירה כללית | 2. תכולת המשחק | 3. הכנה ...",
+          "vector_score": 0.5752,
+          "rerank_score": 0.0
+        },
+        {
+          "file": "rules_masa_hatzvaim.md",
+          "section": "6. אסימוני מסע | 7. סיום",
+          "vector_score": 0.5645,
+          "rerank_score": 0.0
+        },
+        {
+          "file": "rules_chotfei_hamapot.md",
+          "section": "1. סקירה כללית | 2. תכולת המשחק | 3. הכנה ...",
+          "vector_score": 0.5649,
+          "rerank_score": 0.0
+        },
+        {
+          "file": "rules_chotfei_hamapot.md",
+          "section": "6. קלפי מלכודת | 7. סיום",
+          "vector_score": 0.5616,
+          "rerank_score": 0.0
+        },
+        {
+          "file": "catalog_2024.md",
+          "section": "1. משחקי ליבה | 2. הערות",
+          "vector_score": 0.5678,
+          "rerank_score": 0.0
+        }
+      ],
+      "selected": [
+        {
+          "file": "catalog_accessories.pdf",
+          "section": "1. אביזרים | 2. הערות"
+        },
+        {
+          "file": "catalog_2025.md",
+          "section": "1. משחקי ליבה | 2. הערות"
+        },
+        {
+          "file": "rules_migdalei_barak.md",
+          "section": "3. הכנה למשחק | 4. מהלך המשחק"
+        }
+      ],
+      "seconds": 2.12,
+      "tokens": {
+        "rerank_prompt": 2684,
+        "rerank_completion": 33,
+        "answer_prompt": 1112,
+        "answer_completion": 15,
+        "total_llm": 3844,
+        "question_embedding_est": 52
+      },
+      "recall_at_3": 0.0,
+      "recall_at_10": 0.0,
+      "rr": 0.0,
+      "final_recall": 0.0,
+      "faithfulness": 1.0,
+      "correctness": 0.0
+    },
+    {
+      "id": 4,
+      "category": "ניסוח שונה מהמסמך",
+      "question": "עד מתי אפשר לפנות לשירות הלקוחות בימי שישי?",
+      "answerable": true,
+      "expected_type": "שאלות נפוצות ושירות לקוחות",
+      "expected_files": [
+        "faq_service_hours.md"
+      ],
+      "expected_answer": "בימי שישי שירות הלקוחות פעיל מ-09:00 עד 12:00, כלומר עד השעה 12:00.",
+      "answer": "אפשר לפנות לשירות הלקוחות בימי שישי עד השעה 12:00.",
+      "is_refusal": false,
+      "classify_scores": {
+        "חוקי משחק": 0.15652107837685691,
+        "קטלוג מוצרים": 0.23792627560027366,
+        "מדיניות": 0.32127435790348746,
+        "שאלות נפוצות ושירות לקוחות": 0.4283018399216004,
+        "היסטוריית החברה והודעות": 0.26497127089513967
+      },
+      "top_type": "שאלות נפוצות ושירות לקוחות",
+      "top_score": 0.4283018399216004,
+      "applied_type": "שאלות נפוצות ושירות לקוחות",
+      "games": [],
+      "retried": false,
+      "retrieved": [
+        {
+          "file": "faq_service_hours.md",
+          "section": "1. שעות פעילות | 2. דרכי יצירת קשר | 3. כמה זמן ממתינים לתשובה?",
+          "vector_score": 0.5974,
+          "rerank_score": 10.0
+        },
+        {
+          "file": "faq_orders.md",
+          "section": "1. איך עוקבים אחרי הזמנה? | 2. אפשר לשנות כתובת אחרי ההזמנה? | 3. אילו אמצעי תשלום מתקבלים? ...",
+          "vector_score": 0.5768,
+          "rerank_score": 0.0
+        },
+        {
+          "file": "faq_club.md",
+          "section": "1. מה זה מועדון שבילי? | 2. מה מקבלים? | 3. האם ההנחה חלה על אביזרים? ...",
+          "vector_score": 0.544,
+          "rerank_score": 0.0
+        },
+        {
+          "file": "faq_missing_parts.pdf",
+          "section": "1. חסר חלק בקופסה, מה עושים? | 2. עד מתי אפשר לבקש חלק? | 3. אפשר לקנות חלקים נפרדים?",
+          "vector_score": 0.5333,
+          "rerank_score": 0.0
+        },
+        {
+          "file": "faq_gameplay_support.md",
+          "section": "1. איזו מהדורה של מגדלי הברק יש לי? | 2. מה עושים אם אין מספיק שחקנים בעמק הדבורים? | 3. האם יש חוקים להורדה? ...",
+          "vector_score": 0.5091,
+          "rerank_score": 0.0
+        },
+        {
+          "file": "faq_gameplay_support.md",
+          "section": "3. האם יש חוקים להורדה? | 4. מאיזה גיל מתאים מסע הצבעים?",
+          "vector_score": 0.5034,
+          "rerank_score": 0.0
+        }
+      ],
+      "selected": [
+        {
+          "file": "faq_service_hours.md",
+          "section": "1. שעות פעילות | 2. דרכי יצירת קשר | 3. כמה זמן ממתינים לתשובה?"
+        },
+        {
+          "file": "faq_orders.md",
+          "section": "1. איך עוקבים אחרי הזמנה? | 2. אפשר לשנות כתובת אחרי ההזמנה? | 3. אילו אמצעי תשלום מתקבלים? ..."
+        },
+        {
+          "file": "faq_club.md",
+          "section": "1. מה זה מועדון שבילי? | 2. מה מקבלים? | 3. האם ההנחה חלה על אביזרים? ..."
+        }
+      ],
+      "seconds": 1.73,
+      "tokens": {
+        "rerank_prompt": 1536,
+        "rerank_completion": 21,
+        "answer_prompt": 995,
+        "answer_completion": 19,
+        "total_llm": 2571,
+        "question_embedding_est": 39
+      },
+      "recall_at_3": 1.0,
+      "recall_at_10": 1.0,
+      "rr": 1.0,
+      "final_recall": 1.0,
+      "faithfulness": 1.0,
+      "correctness": 1.0
+    },
+    {
+      "id": 5,
+      "category": "פרט מדויק",
+      "question": "מה המק\"ט של קובייה חלופית למסע הצבעים וכמה היא עולה?",
+      "answerable": true,
+      "expected_type": "קטלוג מוצרים",
+      "expected_files": [
+        "catalog_accessories.pdf"
+      ],
+      "expected_answer": "המק\"ט הוא AC-404 והמחיר 9 ₪.",
+      "answer": "אין לי מספיק מידע במאגר כדי לענות על השאלה הזו.",
+      "is_refusal": true,
+      "classify_scores": {
+        "חוקי משחק": 0.27988318886784963,
+        "קטלוג מוצרים": 0.1577087186072204,
+        "מדיניות": 0.10828064266813214,
+        "שאלות נפוצות ושירות לקוחות": 0.17549408037685924,
+        "היסטוריית החברה והודעות": 0.16800787607919737
+      },
+      "top_type": "חוקי משחק",
+      "top_score": 0.27988318886784963,
+      "applied_type": null,
+      "games": [
+        "מסע הצבעים"
+      ],
+      "retried": false,
+      "retrieved": [
+        {
+          "file": "catalog_expansions.md",
+          "section": "1. תוספות למשחקים קיימים | 2. תוכן התוספות",
+          "vector_score": 0.4959,
+          "rerank_score": 10.0
+        },
+        {
+          "file": "history_company.md",
+          "section": "1. ההקמה | 2. ציוני דרך | 3. עובדים",
+          "vector_score": 0.4903,
+          "rerank_score": 0.0
+        },
+        {
+          "file": "faq_gameplay_support.md",
+          "section": "3. האם יש חוקים להורדה? | 4. מאיזה גיל מתאים מסע הצבעים?",
+          "vector_score": 0.5001,
+          "rerank_score": 0.0
+        },
+        {
+          "file": "catalog_expansions.md",
+          "section": "2. תוכן התוספות | 3. תאימות",
+          "vector_score": 0.4988,
+          "rerank_score": 0.0
+        },
+        {
+          "file": "catalog_accessories.pdf",
+          "section": "1. אביזרים | 2. הערות",
+          "vector_score": 0.4907,
+          "rerank_score": 0.0
+        },
+        {
+          "file": "catalog_2025.md",
+          "section": "1. משחקי ליבה | 2. הערות",
+          "vector_score": 0.4895,
+          "rerank_score": 0.0
+        },
+        {
+          "file": "rules_masa_hatzvaim.md",
+          "section": "4. מהלך התור | 5. כרטיסי נוף | 6. אסימוני מסע",
+          "vector_score": 0.5278,
+          "rerank_score": 0.0
+        },
+        {
+          "file": "rules_masa_hatzvaim.md",
+          "section": "1. סקירה כללית | 2. תכולת המשחק | 3. הכנה ...",
+          "vector_score": 0.5267,
+          "rerank_score": 0.0
+        },
+        {
+          "file": "catalog_2024.md",
+          "section": "2. הערות",
+          "vector_score": 0.5016,
+          "rerank_score": 0.0
+        },
+        {
+          "file": "catalog_2024.md",
+          "section": "1. משחקי ליבה | 2. הערות",
+          "vector_score": 0.4878,
+          "rerank_score": 0.0
+        }
+      ],
+      "selected": [
+        {
+          "file": "catalog_expansions.md",
+          "section": "1. תוספות למשחקים קיימים | 2. תוכן התוספות"
+        },
+        {
+          "file": "history_company.md",
+          "section": "1. ההקמה | 2. ציוני דרך | 3. עובדים"
+        },
+        {
+          "file": "faq_gameplay_support.md",
+          "section": "3. האם יש חוקים להורדה? | 4. מאיזה גיל מתאים מסע הצבעים?"
+        }
+      ],
+      "seconds": 1.79,
+      "tokens": {
+        "rerank_prompt": 2496,
+        "rerank_completion": 33,
+        "answer_prompt": 896,
+        "answer_completion": 15,
+        "total_llm": 3440,
+        "question_embedding_est": 52
+      },
+      "recall_at_3": 0.0,
+      "recall_at_10": 1.0,
+      "rr": 0.2,
+      "final_recall": 0.0,
+      "faithfulness": 1.0,
+      "correctness": 0.0
+    },
+    {
+      "id": 6,
+      "category": "פרט מדויק",
+      "question": "כמה עולה ים של אבנים לפי הקטלוג הנוכחי?",
+      "answerable": true,
+      "expected_type": "קטלוג מוצרים",
+      "expected_files": [
+        "catalog_2025.md"
+      ],
+      "expected_answer": "149 ₪ בקטלוג הנוכחי (בקטלוג הקודם היה 139 ₪).",
+      "answer": "ים של אבנים עולה 149 ₪ לפי הקטלוג הנוכחי (גרסה 2.0, עדכון 2025-09-01).",
+      "is_refusal": false,
+      "classify_scores": {
+        "חוקי משחק": 0.24498090590672378,
+        "קטלוג מוצרים": 0.2751004634762286,
+        "מדיניות": 0.1423250539007314,
+        "שאלות נפוצות ושירות לקוחות": 0.1641831233343483,
+        "היסטוריית החברה והודעות": 0.1560836165851246
+      },
+      "top_type": "קטלוג מוצרים",
+      "top_score": 0.2751004634762286,
+      "applied_type": null,
+      "games": [
+        "ים של אבנים"
+      ],
+      "retried": false,
+      "retrieved": [
+        {
+          "file": "catalog_2025.md",
+          "section": "1. משחקי ליבה | 2. הערות",
+          "vector_score": 0.5192,
+          "rerank_score": 10.0
+        },
+        {
+          "file": "catalog_2024.md",
+          "section": "1. משחקי ליבה | 2. הערות",
+          "vector_score": 0.5143,
+          "rerank_score": 10.0
+        },
+        {
+          "file": "faq_club.md",
+          "section": "1. מה זה מועדון שבילי? | 2. מה מקבלים? | 3. האם ההנחה חלה על אביזרים? ...",
+          "vector_score": 0.4901,
+          "rerank_score": 0.0
+        },
+        {
+          "file": "catalog_accessories.pdf",
+          "section": "1. אביזרים | 2. הערות",
+          "vector_score": 0.5543,
+          "rerank_score": 0.0
+        },
+        {
+          "file": "catalog_expansions.md",
+          "section": "2. תוכן התוספות | 3. תאימות",
+          "vector_score": 0.5142,
+          "rerank_score": 0.0
+        },
+        {
+          "file": "catalog_2025.md",
+          "section": "2. הערות",
+          "vector_score": 0.5095,
+          "rerank_score": 0.0
+        },
+        {
+          "file": "catalog_expansions.md",
+          "section": "1. תוספות למשחקים קיימים | 2. תוכן התוספות",
+          "vector_score": 0.497,
+          "rerank_score": 0.0
+        },
+        {
+          "file": "catalog_gift_sets.md",
+          "section": "1. ערכות | 2. חיסכון | 3. אריזה",
+          "vector_score": 0.4892,
+          "rerank_score": 0.0
+        },
+        {
+          "file": "catalog_2025.md",
+          "section": "1. משחקי ליבה",
+          "vector_score": 0.4803,
+          "rerank_score": 0.0
+        },
+        {
+          "file": "catalog_2024.md",
+          "section": "2. הערות",
+          "vector_score": 0.5404,
+          "rerank_score": 0.0
+        }
+      ],
+      "selected": [
+        {
+          "file": "catalog_2025.md",
+          "section": "1. משחקי ליבה | 2. הערות"
+        },
+        {
+          "file": "catalog_2024.md",
+          "section": "1. משחקי ליבה | 2. הערות"
+        },
+        {
+          "file": "faq_club.md",
+          "section": "1. מה זה מועדון שבילי? | 2. מה מקבלים? | 3. האם ההנחה חלה על אביזרים? ..."
+        }
+      ],
+      "seconds": 2.0,
+      "tokens": {
+        "rerank_prompt": 2373,
+        "rerank_completion": 33,
+        "answer_prompt": 1126,
+        "answer_completion": 33,
+        "total_llm": 3565,
+        "question_embedding_est": 39
+      },
+      "recall_at_3": 1.0,
+      "recall_at_10": 1.0,
+      "rr": 1.0,
+      "final_recall": 1.0,
+      "faithfulness": 0.0,
+      "correctness": 1.0
+    },
+    {
+      "id": 7,
+      "category": "כמה מסמכים",
+      "question": "איך השתנו תנאי המשלוח החינם וזמן האספקה בין המדיניות הישנה לחדשה?",
+      "answerable": true,
+      "expected_type": "מדיניות",
+      "expected_files": [
+        "shipping_policy_v1.md",
+        "shipping_policy_v2.md"
+      ],
+      "expected_answer": "במדיניות הישנה משלוח חינם מ-250 ₪ וזמן אספקה של 5 עד 7 ימי עסקים. במדיניות החדשה משלוח חינם מ-199 ₪ וזמן אספקה של 3 עד 5 ימי עסקים.",
+      "answer": "תנאי המשלוח החינם השתנו כך שהסכום המינימלי להזמנה כדי לקבל משלוח חינם ירד מ-250 ₪ ל-199 ₪. זמן האספקה השתנה מ-5 עד 7 ימי עסקים ל-3 עד 5 ימי עסקים.",
+      "is_refusal": false,
+      "classify_scores": {
+        "חוקי משחק": 0.16837550996765532,
+        "קטלוג מוצרים": 0.11662962127972905,
+        "מדיניות": 0.40922902926151405,
+        "שאלות נפוצות ושירות לקוחות": 0.2353367720770418,
+        "היסטוריית החברה והודעות": 0.17715087970386978
+      },
+      "top_type": "מדיניות",
+      "top_score": 0.40922902926151405,
+      "applied_type": "מדיניות",
+      "games": [],
+      "retried": false,
+      "retrieved": [
+        {
+          "file": "shipping_policy_v2.md",
+          "section": "1. עלות משלוח | 2. זמני אספקה | 3. נקודות איסוף ...",
+          "vector_score": 0.6201,
+          "rerank_score": 10.0
+        },
+        {
+          "file": "returns_policy_v2.md",
+          "section": "1. תקופת ההחזרה | 2. מצב המוצר | 3. החזר כספי",
+          "vector_score": 0.5038,
+          "rerank_score": 10.0
+        },
+        {
+          "file": "shipping_policy_v1.md",
+          "section": "1. עלות משלוח | 2. זמני אספקה | 3. איסוף עצמי",
+          "vector_score": 0.6326,
+          "rerank_score": 10.0
+        },
+        {
+          "file": "shipping_policy_v2.md",
+          "section": "4. משלוחים לחו\"ל | 5. הערה",
+          "vector_score": 0.5985,
+          "rerank_score": 8.0
+        },
+        {
+          "file": "returns_policy_v2.md",
+          "section": "3. החזר כספי | 4. עלות המשלוח | 5. החלפה ...",
+          "vector_score": 0.5417,
+          "rerank_score": 0.0
+        },
+        {
+          "file": "warranty_policy.pdf",
+          "section": "1. תקופת האחריות | 2. מה מכוסה | 3. מה אינו מכוסה ...",
+          "vector_score": 0.5155,
+          "rerank_score": 0.0
+        },
+        {
+          "file": "warranty_policy.pdf",
+          "section": "3. מה אינו מכוסה | 4. תהליך הטיפול",
+          "vector_score": 0.4993,
+          "rerank_score": 0.0
+        },
+        {
+          "file": "returns_policy_v1.md",
+          "section": "4. עלות המשלוח | 5. יצירת קשר",
+          "vector_score": 0.5437,
+          "rerank_score": 0.0
+        },
+        {
+          "file": "returns_policy_v1.md",
+          "section": "1. תקופת ההחזרה | 2. מצב המוצר | 3. החזר כספי ...",
+          "vector_score": 0.5185,
+          "rerank_score": 0.0
+        }
+      ],
+      "selected": [
+        {
+          "file": "shipping_policy_v2.md",
+          "section": "1. עלות משלוח | 2. זמני אספקה | 3. נקודות איסוף ..."
+        },
+        {
+          "file": "returns_policy_v2.md",
+          "section": "1. תקופת ההחזרה | 2. מצב המוצר | 3. החזר כספי"
+        },
+        {
+          "file": "shipping_policy_v1.md",
+          "section": "1. עלות משלוח | 2. זמני אספקה | 3. איסוף עצמי"
+        }
+      ],
+      "seconds": 2.14,
+      "tokens": {
+        "rerank_prompt": 1954,
+        "rerank_completion": 30,
+        "answer_prompt": 994,
+        "answer_completion": 66,
+        "total_llm": 3044,
+        "question_embedding_est": 63
+      },
+      "recall_at_3": 1.0,
+      "recall_at_10": 1.0,
+      "rr": 1.0,
+      "final_recall": 1.0,
+      "faithfulness": 1.0,
+      "correctness": 1.0
+    },
+    {
+      "id": 8,
+      "category": "פרט מדויק",
+      "question": "כמה נקודות שווה צנצנת דבש עם חותמת מלכה בעמק הדבורים?",
+      "answerable": true,
+      "expected_type": "חוקי משחק",
+      "expected_files": [
+        "rules_emek_hadvorim.pdf"
+      ],
+      "expected_answer": "5 נקודות (צנצנת דבש רגילה שווה 3 נקודות).",
+      "answer": "צנצנת דבש עם חותמת מלכה שווה 5 נקודות בעמק הדבורים.",
+      "is_refusal": false,
+      "classify_scores": {
+        "חוקי משחק": 0.2823856664931741,
+        "קטלוג מוצרים": 0.19143461912357002,
+        "מדיניות": 0.1326322152860368,
+        "שאלות נפוצות ושירות לקוחות": 0.23742019670532277,
+        "היסטוריית החברה והודעות": 0.154922594179336
+      },
+      "top_type": "חוקי משחק",
+      "top_score": 0.2823856664931741,
+      "applied_type": null,
+      "games": [
+        "עמק הדבורים"
+      ],
+      "retried": false,
+      "retrieved": [
+        {
+          "file": "rules_emek_hadvorim.pdf",
+          "section": "8. סיום",
+          "vector_score": 0.5931,
+          "rerank_score": 10.0
+        },
+        {
+          "file": "rules_emek_hadvorim.pdf",
+          "section": "5. הצבת פועלים | 6. הפקת דבש | 7. משחק סולו ...",
+          "vector_score": 0.5444,
+          "rerank_score": 10.0
+        },
+        {
+          "file": "faq_gameplay_support.md",
+          "section": "1. איזו מהדורה של מגדלי הברק יש לי? | 2. מה עושים אם אין מספיק שחקנים בעמק הדבורים? | 3. האם יש חוקים להורדה? ...",
+          "vector_score": 0.499,
+          "rerank_score": 0.0
+        },
+        {
+          "file": "faq_missing_parts.pdf",
+          "section": "1. חסר חלק בקופסה, מה עושים? | 2. עד מתי אפשר לבקש חלק? | 3. אפשר לקנות חלקים נפרדים?",
+          "vector_score": 0.4891,
+          "rerank_score": 0.0
+        },
+        {
+          "file": "catalog_expansions.md",
+          "section": "2. תוכן התוספות | 3. תאימות",
+          "vector_score": 0.504,
+          "rerank_score": 0.0
+        },
+        {
+          "file": "catalog_gift_sets.md",
+          "section": "1. ערכות | 2. חיסכון | 3. אריזה",
+          "vector_score": 0.4919,
+          "rerank_score": 0.0
+        },
+        {
+          "file": "catalog_expansions.md",
+          "section": "1. תוספות למשחקים קיימים | 2. תוכן התוספות",
+          "vector_score": 0.4901,
+          "rerank_score": 0.0
+        },
+        {
+          "file": "catalog_2025.md",
+          "section": "1. משחקי ליבה | 2. הערות",
+          "vector_score": 0.4901,
+          "rerank_score": 0.0
+        },
+        {
+          "file": "rules_emek_hadvorim.pdf",
+          "section": "1. סקירה כללית עמק הדבורים הוא משחק הצבת פועלים ל-1 עד 4 שחקנים, בני 12 ומעלה. משך משחק הוא 60 עד 90 דקות. כל שחקן מנהל כוורת, שולח דבורים לאסוף צוף ואבקה, ומייצר צנצנות דבש בעלות ערך. | 2. תכולת המשחק לוח עמק מודולרי בן 6 אריחים, 4 דבורי עץ לכל שחקן, 40 אסימוני צוף, 30 אסימוני אבקה, 24 צנצנות דבש, 20 קלפי יעד ו-8 קלפי עונה. | 3. הכנה",
+          "vector_score": 0.537,
+          "rerank_score": 0.0
+        },
+        {
+          "file": "rules_emek_hadvorim.pdf",
+          "section": "3. הכנה | 4. סבבים ועונות | 5. הצבת פועלים",
+          "vector_score": 0.5358,
+          "rerank_score": 0.0
+        }
+      ],
+      "selected": [
+        {
+          "file": "rules_emek_hadvorim.pdf",
+          "section": "8. סיום"
+        },
+        {
+          "file": "rules_emek_hadvorim.pdf",
+          "section": "5. הצבת פועלים | 6. הפקת דבש | 7. משחק סולו ..."
+        },
+        {
+          "file": "faq_gameplay_support.md",
+          "section": "1. איזו מהדורה של מגדלי הברק יש לי? | 2. מה עושים אם אין מספיק שחקנים בעמק הדבורים? | 3. האם יש חוקים להורדה? ..."
+        }
+      ],
+      "seconds": 2.12,
+      "tokens": {
+        "rerank_prompt": 2777,
+        "rerank_completion": 33,
+        "answer_prompt": 924,
+        "answer_completion": 23,
+        "total_llm": 3757,
+        "question_embedding_est": 55
+      },
+      "recall_at_3": 1.0,
+      "recall_at_10": 1.0,
+      "rr": 1.0,
+      "final_recall": 1.0,
+      "faithfulness": 1.0,
+      "correctness": 1.0
+    },
+    {
+      "id": 9,
+      "category": "אין תשובה במאגר",
+      "question": "מהו מספר הפקס של שירות הלקוחות?",
+      "answerable": false,
+      "expected_type": "שאלות נפוצות ושירות לקוחות",
+      "expected_files": [],
+      "expected_answer": "אין מידע במאגר. המערכת צריכה לסרב לענות.",
+      "answer": "אין לי מספיק מידע במאגר כדי לענות על השאלה הזו.",
+      "is_refusal": true,
+      "classify_scores": {
+        "חוקי משחק": 0.24686365943234173,
+        "קטלוג מוצרים": 0.2933812300234212,
+        "מדיניות": 0.24561959929438587,
+        "שאלות נפוצות ושירות לקוחות": 0.3034951729425961,
+        "היסטוריית החברה והודעות": 0.25758677289640375
+      },
+      "top_type": "שאלות נפוצות ושירות לקוחות",
+      "top_score": 0.3034951729425961,
+      "applied_type": null,
+      "games": [],
+      "retried": false,
+      "retrieved": [
+        {
+          "file": "faq_orders.md",
+          "section": "1. איך עוקבים אחרי הזמנה? | 2. אפשר לשנות כתובת אחרי ההזמנה? | 3. אילו אמצעי תשלום מתקבלים? ...",
+          "vector_score": 0.5205,
+          "rerank_score": 0.0
+        },
+        {
+          "file": "faq_missing_parts.pdf",
+          "section": "1. חסר חלק בקופסה, מה עושים? | 2. עד מתי אפשר לבקש חלק? | 3. אפשר לקנות חלקים נפרדים?",
+          "vector_score": 0.5201,
+          "rerank_score": 0.0
+        },
+        {
+          "file": "catalog_gift_sets.md",
+          "section": "1. ערכות | 2. חיסכון | 3. אריזה",
+          "vector_score": 0.5277,
+          "rerank_score": 0.0
+        },
+        {
+          "file": "catalog_2025.md",
+          "section": "2. הערות",
+          "vector_score": 0.5256,
+          "rerank_score": 0.0
+        },
+        {
+          "file": "returns_policy_v2.md",
+          "section": "3. החזר כספי | 4. עלות המשלוח | 5. החלפה ...",
+          "vector_score": 0.5415,
+          "rerank_score": 0.0
+        },
+        {
+          "file": "announcement_new_warehouse.md",
+          "section": "1. מה זה משנה ללקוחות",
+          "vector_score": 0.5794,
+          "rerank_score": 0.0
+        },
+        {
+          "file": "release_kod_hakochavim.pdf",
+          "section": "1. פרטי ההשקה | 2. תוספת",
+          "vector_score": 0.5211,
+          "rerank_score": 0.0
+        },
+        {
+          "file": "rules_chotfei_hamapot.md",
+          "section": "1. סקירה כללית | 2. תכולת המשחק | 3. הכנה ...",
+          "vector_score": 0.5206,
+          "rerank_score": 0.0
+        },
+        {
+          "file": "catalog_2024.md",
+          "section": "2. הערות",
+          "vector_score": 0.5275,
+          "rerank_score": 0.0
+        },
+        {
+          "file": "catalog_2024.md",
+          "section": "1. משחקי ליבה | 2. הערות",
+          "vector_score": 0.5202,
+          "rerank_score": 0.0
+        }
+      ],
+      "selected": [
+        {
+          "file": "faq_orders.md",
+          "section": "1. איך עוקבים אחרי הזמנה? | 2. אפשר לשנות כתובת אחרי ההזמנה? | 3. אילו אמצעי תשלום מתקבלים? ..."
+        },
+        {
+          "file": "faq_missing_parts.pdf",
+          "section": "1. חסר חלק בקופסה, מה עושים? | 2. עד מתי אפשר לבקש חלק? | 3. אפשר לקנות חלקים נפרדים?"
+        },
+        {
+          "file": "catalog_gift_sets.md",
+          "section": "1. ערכות | 2. חיסכון | 3. אריזה"
+        }
+      ],
+      "seconds": 1.95,
+      "tokens": {
+        "rerank_prompt": 2353,
+        "rerank_completion": 33,
+        "answer_prompt": 1056,
+        "answer_completion": 15,
+        "total_llm": 3457,
+        "question_embedding_est": 32
+      },
+      "faithfulness": 1.0,
+      "correctness": 1.0
+    },
+    {
+      "id": 10,
+      "category": "אין תשובה במאגר",
+      "question": "כמה עותקים נמכרו ממגדלי הברק בשנה הראשונה?",
+      "answerable": false,
+      "expected_type": "היסטוריית החברה והודעות",
+      "expected_files": [],
+      "expected_answer": "אין מידע במאגר. המערכת צריכה לסרב לענות.",
+      "answer": "אין לי מספיק מידע במאגר כדי לענות על השאלה הזו.",
+      "is_refusal": true,
+      "classify_scores": {
+        "חוקי משחק": 0.1906825324471189,
+        "קטלוג מוצרים": 0.14899931144571937,
+        "מדיניות": 0.23463493367802785,
+        "שאלות נפוצות ושירות לקוחות": 0.18794638643112516,
+        "היסטוריית החברה והודעות": 0.2033626532717778
+      },
+      "top_type": "מדיניות",
+      "top_score": 0.23463493367802785,
+      "applied_type": null,
+      "games": [
+        "מגדלי הברק"
+      ],
+      "retried": true,
+      "retrieved": [
+        {
+          "file": "history_company.md",
+          "section": "1. ההקמה | 2. ציוני דרך | 3. עובדים",
+          "vector_score": 0.518,
+          "rerank_score": 0.0
+        },
+        {
+          "file": "faq_gameplay_support.md",
+          "section": "1. איזו מהדורה של מגדלי הברק יש לי? | 2. מה עושים אם אין מספיק שחקנים בעמק הדבורים? | 3. האם יש חוקים להורדה? ...",
+          "vector_score": 0.5293,
+          "rerank_score": 0.0
+        },
+        {
+          "file": "catalog_2025.md",
+          "section": "2. הערות",
+          "vector_score": 0.5264,
+          "rerank_score": 0.0
+        },
+        {
+          "file": "release_migdalei_barak_2nd.md",
+          "section": "1. מה חדש | 2. הנחת שדרוג",
+          "vector_score": 0.5729,
+          "rerank_score": 0.0
+        },
+        {
+          "file": "rules_migdalei_barak.md",
+          "section": "8. שינויים במהדורה השנייה (גרסה 2.0)",
+          "vector_score": 0.5634,
+          "rerank_score": 0.0
+        },
+        {
+          "file": "rules_migdalei_barak.md",
+          "section": "6. קלפי אתגר | 7. סיום המשחק | 8. שינויים במהדורה השנייה (גרסה 2.0)",
+          "vector_score": 0.5566,
+          "rerank_score": 0.0
+        },
+        {
+          "file": "rules_migdalei_barak.md",
+          "section": "1. סקירה כללית | 2. תכולת המשחק | 3. הכנה למשחק",
+          "vector_score": 0.5555,
+          "rerank_score": 0.0
+        },
+        {
+          "file": "rules_migdalei_barak.md",
+          "section": "3. הכנה למשחק | 4. מהלך המשחק",
+          "vector_score": 0.5493,
+          "rerank_score": 0.0
+        },
+        {
+          "file": "rules_migdalei_barak.md",
+          "section": "4. מהלך המשחק | 5. אסימוני ברק | 6. קלפי אתגר",
+          "vector_score": 0.5361,
+          "rerank_score": 0.0
+        },
+        {
+          "file": "catalog_2024.md",
+          "section": "2. הערות",
+          "vector_score": 0.5463,
+          "rerank_score": 0.0
+        }
+      ],
+      "selected": [
+        {
+          "file": "history_company.md",
+          "section": "1. ההקמה | 2. ציוני דרך | 3. עובדים"
+        },
+        {
+          "file": "faq_gameplay_support.md",
+          "section": "1. איזו מהדורה של מגדלי הברק יש לי? | 2. מה עושים אם אין מספיק שחקנים בעמק הדבורים? | 3. האם יש חוקים להורדה? ..."
+        },
+        {
+          "file": "catalog_2025.md",
+          "section": "2. הערות"
+        }
+      ],
+      "seconds": 3.13,
+      "tokens": {
+        "rerank_prompt": 4680,
+        "rerank_completion": 66,
+        "answer_prompt": 908,
+        "answer_completion": 15,
+        "total_llm": 5669,
+        "question_embedding_est": 43
+      },
+      "faithfulness": 1.0,
+      "correctness": 1.0
+    }
+  ]
+}

@@ -1,0 +1,3 @@
+[
+  {"id": 401, "category": "החטאת אחזור (בעיה 11)", "question": "אם חסר לי חלק במשחק, מה עושים?", "doc_type": "שאלות נפוצות ושירות לקוחות", "expected_files": ["faq_missing_parts.pdf", "warranty_policy.pdf"], "expected_answer": "ממלאים טופס חלקים חסרים באתר עם תמונה, והחלק נשלח בחינם בתוך 5 ימי עסקים.", "answerable": true}
+]
